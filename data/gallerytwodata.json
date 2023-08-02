@@ -1,0 +1,69 @@
+[
+    {
+        "title": "Living Room",
+        "categories": ["LivingRoom", "Kitchen"],
+        "imageSquare": "/images/gallery/gallery-1.jpg",
+        "src": "/images/gallery/gallery-1.jpg"
+    },
+    {
+        "title": "Bed Room",
+        "categories": ["BedRoom", "Kitchen"],
+        "imageSquare": "/images/gallery/gallery-2.jpg",
+        "src": "/images/gallery/gallery-2.jpg"
+    },
+    {
+        "title": "Basement",
+        "categories": ["Basement", "BedRoom", "BathRoom"],
+        "imageSquare": "/images/gallery/gallery-3.jpg",
+        "src": "https://www.youtube.com/embed/nfP5N9Yc72A?autoplay=true",
+        "videobtnshow": "videobtn-show"
+    },
+    {
+        "title": "Bath Room",
+        "categories": ["BathRoom", "LivingRoom"],
+        "imageSquare": "/images/gallery/gallery-4.jpg",
+        "src": "/images/gallery/gallery-4.jpg"
+    },
+    {
+        "title": "Living Room",
+        "categories": ["Basement", "LivingRoom"],
+        "imageSquare": "/images/gallery/gallery-5.jpg",
+        "src": "/images/gallery/gallery-5.jpg"
+    },
+    {
+        "title": "Kitchen",
+        "categories": ["Kitchen", "BathRoom", "BedRoom"],
+        "imageSquare": "/images/gallery/gallery-6.jpg",
+        "src": "/images/gallery/gallery-6.jpg"
+    },
+    {
+        "title": "Basement",
+        "categories": ["Kitchen", "Basement", "BedRoom"],
+        "imageSquare": "/images/gallery/gallery-7.jpg",
+        "src": "/images/gallery/gallery-7.jpg"
+    },
+    {
+        "title": "Living Room",
+        "categories": ["LivingRoom", "Kitchen", "BathRoom"],
+        "imageSquare": "/images/gallery/gallery-8.jpg",
+        "src": "/images/gallery/gallery-8.jpg"
+    },
+    {
+        "title": "Bath Room",
+        "categories": ["LivingRoom", "BathRoom", "Basement"],
+        "imageSquare": "/images/gallery/gallery-9.jpg",
+        "src": "/images/gallery/gallery-9.jpg"
+    },
+    {
+        "title": "Bed Room",
+        "categories": ["Basement", "BedRoom"],
+        "imageSquare": "/images/gallery/gallery-10.jpg",
+        "src": "/images/gallery/gallery-10.jpg"
+    },
+    {
+        "title": "Kitchen",
+        "categories": ["Basement", "LivingRoom", "Kitchen", "BathRoom", "BedRoom"],
+        "imageSquare": "/images/gallery/gallery-11.jpg",
+        "src": "/images/gallery/gallery-11.jpg"
+    }
+]

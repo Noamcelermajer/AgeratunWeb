@@ -1,0 +1,395 @@
+[
+    {
+        "agentImage": "/images/agents/agent-1.png",
+        "image":"/images/team/team-1.jpg",
+        "membername":"John Mendy",
+        "membersubtitle": "Realtor Agent",
+        "infoData": [
+            {
+                "infolink": "tel:01283452516",
+                "infonumber": "+012 8345 25 16",
+                "infotext": "Phone:"
+            },
+            {
+                "infolink": "mailto:eduard256@realtor.com",
+                "infonumber": "eduad@realtor.com",
+                "infotext": "Email:"
+            },
+            {
+                "infonumber": "62 Orchard St, NY 90025",
+                "infotext": "Address:"
+            },
+            {
+                "infonumber": "BF-0252",
+                "infotext": "License:"
+            },
+            {
+                "infonumber": " Orlando, Manhattan, Los Angeles",
+                "infotext": "Area:"
+            }
+        ],
+        "socialData": [
+            {
+                "link": "https://twitter.com/",
+                "icon": "fa fa-twitter"
+            },
+            {
+                "link": "https://www.facebook.com/",
+                "icon": "fa fa-facebook-f"
+            },
+            {
+                "link": "https://www.instagram.com/",
+                "icon": "fa fa-instagram"
+            },
+            {
+                "link": "https://www.linkedin.com/",
+                "icon": "fa fa-linkedin"
+            }
+        ],
+        "experienceData":[
+            {
+                "boldtext": "32 Apartments",
+                "normaltext": "sell successful in project Ecostate Park Residence, Mahantan"
+            },
+            {
+                "boldtext": "22 Apartments",
+                "normaltext": "sell successful in project EcoHaus Riverside Residence, Orlando"
+            },
+            {
+                "boldtext": "12 Bungalows",
+                "normaltext": "for rent successful in project Ecopi Garden Bungalows, Oakland."
+            },
+            {
+                "normaltext": "Best Salesperson of the Year 2020 in USAGroup Co."
+            },
+            {
+                "normaltext": "Top 5 Best Property Consultant in Orlando, featured on USA Property Magazine."
+            }
+        ],
+        "areaData":[
+            {
+                "areatext": "Ecostate Park Residence, Manhattan"
+            },
+            {
+                "areatext": "Ecopi Garden Bungalows, Oakland, FL"
+            },
+            {
+                "areatext": "Ecohaus Riverside Residence, Orlando"
+            },
+            {
+                "areatext": "Skynet Tower Building, Newyork"
+            },
+            {
+                "areatext": "Flamingo Resort, Miami"
+            }
+        ],
+        "propertyData":[
+            {
+                "propertytext": "Private House"
+            },
+            {
+                "propertytext": "Villa"
+            },
+            {
+                "propertytext": "Apartment"
+            },
+            {
+                "propertytext": "Residence"
+            }
+        ]
+    },
+    {
+        "image":"/images/team/team-2.jpg",
+        "membername":"Daniel Bruno",
+        "membersubtitle": "Bauhaus Architect",
+        "infoData": [
+            {
+                "infolink": "tel:01283452516",
+                "infonumber": "+012 8345 70 65",
+                "infotext": "Phone:"
+            },
+            {
+                "infolink": "mailto:eduard256@realtor.com",
+                "infonumber": "deniel@realtor.com",
+                "infotext": "Email:"
+            },
+            {
+                "infonumber": "62 Orchard St, NY 90025",
+                "infotext": "Address:"
+            },
+            {
+                "infonumber": "BF-0252",
+                "infotext": "License:"
+            },
+            {
+                "infonumber": " Orlando, Manhattan, Los Angeles",
+                "infotext": "Area:"
+            }
+        ],
+        "socialData": [
+            {
+                "link": "https://twitter.com/",
+                "icon": "fa fa-twitter"
+            },
+            {
+                "link": "https://www.facebook.com/",
+                "icon": "fa fa-facebook-f"
+            },
+            {
+                "link": "https://www.instagram.com/",
+                "icon": "fa fa-instagram"
+            },
+            {
+                "link": "https://www.linkedin.com/",
+                "icon": "fa fa-linkedin"
+            }
+        ],
+        "experienceData":[
+            {
+                "boldtext": "32 Apartments",
+                "normaltext": "sell successful in project Ecostate Park Residence, Mahantan"
+            },
+            {
+                "boldtext": "22 Apartments",
+                "normaltext": "sell successful in project EcoHaus Riverside Residence, Orlando"
+            },
+            {
+                "boldtext": "12 Bungalows",
+                "normaltext": "for rent successful in project Ecopi Garden Bungalows, Oakland."
+            },
+            {
+                "normaltext": "Best Salesperson of the Year 2020 in USAGroup Co."
+            },
+            {
+                "normaltext": "Top 5 Best Property Consultant in Orlando, featured on USA Property Magazine."
+            }
+        ],
+        "areaData":[
+            {
+                "areatext": "Ecostate Park Residence, Manhattan"
+            },
+            {
+                "areatext": "Ecopi Garden Bungalows, Oakland, FL"
+            },
+            {
+                "areatext": "Ecohaus Riverside Residence, Orlando"
+            },
+            {
+                "areatext": "Skynet Tower Building, Newyork"
+            },
+            {
+                "areatext": "Flamingo Resort, Miami"
+            }
+        ],
+        "propertyData":[
+            {
+                "propertytext": "Private House"
+            },
+            {
+                "propertytext": "Villa"
+            },
+            {
+                "propertytext": "Apartment"
+            },
+            {
+                "propertytext": "Residence"
+            }
+        ]
+    },
+    {
+        "image":"/images/team/team-3.jpg",
+        "membername":"Kate Ethelyn",
+        "membersubtitle": "Sale at Amazon US",
+        "infoData": [
+            {
+                "infolink": "tel:01283452516",
+                "infonumber": "+012 8345 78 20",
+                "infotext": "Phone:"
+            },
+            {
+                "infolink": "mailto:eduard256@realtor.com",
+                "infonumber": "kate@realtor.com",
+                "infotext": "Email:"
+            },
+            {
+                "infonumber": "62 Orchard St, NY 90025",
+                "infotext": "Address:"
+            },
+            {
+                "infonumber": "BF-0252",
+                "infotext": "License:"
+            },
+            {
+                "infonumber": " Orlando, Manhattan, Los Angeles",
+                "infotext": "Area:"
+            }
+        ],
+        "socialData": [
+            {
+                "link": "https://twitter.com/",
+                "icon": "fa fa-twitter"
+            },
+            {
+                "link": "https://www.facebook.com/",
+                "icon": "fa fa-facebook-f"
+            },
+            {
+                "link": "https://www.instagram.com/",
+                "icon": "fa fa-instagram"
+            },
+            {
+                "link": "https://www.linkedin.com/",
+                "icon": "fa fa-linkedin"
+            }
+        ],
+        "experienceData":[
+            {
+                "boldtext": "32 Apartments",
+                "normaltext": "sell successful in project Ecostate Park Residence, Mahantan"
+            },
+            {
+                "boldtext": "22 Apartments",
+                "normaltext": "sell successful in project EcoHaus Riverside Residence, Orlando"
+            },
+            {
+                "boldtext": "12 Bungalows",
+                "normaltext": "for rent successful in project Ecopi Garden Bungalows, Oakland."
+            },
+            {
+                "normaltext": "Best Salesperson of the Year 2020 in USAGroup Co."
+            },
+            {
+                "normaltext": "Top 5 Best Property Consultant in Orlando, featured on USA Property Magazine."
+            }
+        ],
+        "areaData":[
+            {
+                "areatext": "Ecostate Park Residence, Manhattan"
+            },
+            {
+                "areatext": "Ecopi Garden Bungalows, Oakland, FL"
+            },
+            {
+                "areatext": "Ecohaus Riverside Residence, Orlando"
+            },
+            {
+                "areatext": "Skynet Tower Building, Newyork"
+            },
+            {
+                "areatext": "Flamingo Resort, Miami"
+            }
+        ],
+        "propertyData":[
+            {
+                "propertytext": "Private House"
+            },
+            {
+                "propertytext": "Villa"
+            },
+            {
+                "propertytext": "Apartment"
+            },
+            {
+                "propertytext": "Residence"
+            }
+        ]
+    },
+    {
+        "image":"/images/team/team-4.jpg",
+        "membername":"Elena Howard",
+        "membersubtitle": "Neighbors",
+        "infoData": [
+            {
+                "infolink": "tel:01283452516",
+                "infonumber": "+012 8345 99 77",
+                "infotext": "Phone:"
+            },
+            {
+                "infolink": "mailto:eduard256@realtor.com",
+                "infonumber": "elena@realtor.com",
+                "infotext": "Email:"
+            },
+            {
+                "infonumber": "62 Orchard St, NY 90025",
+                "infotext": "Address:"
+            },
+            {
+                "infonumber": "BF-0252",
+                "infotext": "License:"
+            },
+            {
+                "infonumber": " Orlando, Manhattan, Los Angeles",
+                "infotext": "Area:"
+            }
+        ],
+        "socialData": [
+            {
+                "link": "https://twitter.com/",
+                "icon": "fa fa-twitter"
+            },
+            {
+                "link": "https://www.facebook.com/",
+                "icon": "fa fa-facebook-f"
+            },
+            {
+                "link": "https://www.instagram.com/",
+                "icon": "fa fa-instagram"
+            },
+            {
+                "link": "https://www.linkedin.com/",
+                "icon": "fa fa-linkedin"
+            }
+        ],
+        "experienceData":[
+            {
+                "boldtext": "32 Apartments",
+                "normaltext": "sell successful in project Ecostate Park Residence, Mahantan"
+            },
+            {
+                "boldtext": "22 Apartments",
+                "normaltext": "sell successful in project EcoHaus Riverside Residence, Orlando"
+            },
+            {
+                "boldtext": "12 Bungalows",
+                "normaltext": "for rent successful in project Ecopi Garden Bungalows, Oakland."
+            },
+            {
+                "normaltext": "Best Salesperson of the Year 2020 in USAGroup Co."
+            },
+            {
+                "normaltext": "Top 5 Best Property Consultant in Orlando, featured on USA Property Magazine."
+            }
+        ],
+        "areaData":[
+            {
+                "areatext": "Ecostate Park Residence, Manhattan"
+            },
+            {
+                "areatext": "Ecopi Garden Bungalows, Oakland, FL"
+            },
+            {
+                "areatext": "Ecohaus Riverside Residence, Orlando"
+            },
+            {
+                "areatext": "Skynet Tower Building, Newyork"
+            },
+            {
+                "areatext": "Flamingo Resort, Miami"
+            }
+        ],
+        "propertyData":[
+            {
+                "propertytext": "Private House"
+            },
+            {
+                "propertytext": "Villa"
+            },
+            {
+                "propertytext": "Apartment"
+            },
+            {
+                "propertytext": "Residence"
+            }
+        ]
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "images": "images/investor/ecogroup.png",
+        "projectname": "The Project Development",
+        "investorlink": "https://www.google.com/",
+        "investorweb": "www.ecogroup.com",
+        "investortext": "EcoGroup is a team of professionals working in the field of development and property management with over 30 years of experience"
+    },
+    {
+        "images": "images/investor/baroque.png",
+        "projectname": "Main Contractor",
+        "investorlink": "https://www.google.com/",
+        "investorweb": "www.baroque.com",
+        "investortext": "The most prestigious contractor in California with more than 20 years of experience"
+    },
+    {
+        "images": "images/investor/bauhaus.png",
+        "projectname": "Architecture Firm",
+        "investorlink": "https://www.google.com/",
+        "investorweb": "www.bauhaus.com",
+        "investortext": "An award-winning architecture studio with over 80 projects residential & commerncial in US"
+    },
+    {
+        "images": "images/investor/nordicarch.png",
+        "projectname": "Interior Design",
+        "investorlink": "https://www.google.com/",
+        "investorweb": "www.nordicarch.studio",
+        "investortext": "An interior studio based in Manhattan with over 15 award winners, 15 years of experience"
+    },
+    {
+        "images": "images/investor/realtor.png",
+        "projectname": "Project Broker",
+        "investorlink": "https://www.google.com/",
+        "investorweb": "www.realtor.com",
+        "investortext": "The only broker authorized by Ecogroup"
+    }
+]

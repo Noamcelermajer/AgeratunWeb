@@ -1,0 +1,147 @@
+[
+    {
+        "tabNumber": 0,
+        "title": "52.4 m2",
+        "text": "The gracious entry foyer leads to an open kitchen with custom cabinetry, granite countertops, and a built-in dining banquette indone (bedroom homes).",
+        "contentList": [
+            {
+                "listLeft": "Location",
+                "listRight": "Residence B2"
+            },
+            {
+                "listLeft": "Floor",
+                "listRight": "4"
+            },
+            {
+                "listLeft": "Bed/Bath",
+                "listRight": "1/1"
+            },
+            {
+                "listLeft": "Parking",
+                "listRight": "No"
+            },
+            {
+                "listLeft": "Price",
+                "listRight": "$125,000",
+                "colorClass": "redcolor font-bold"
+            }
+        ],
+        "imgSrc": "/images/floor-plan/apartment-2.png"
+    },
+    {
+        "tabNumber": 1,
+        "title": "24 m2",
+        "text": "The gracious entry foyer leads to an open kitchen with custom cabinetry, granite countertops, and a built-in dining banquette indone (bedroom homes).",
+        "contentList": [
+            {
+                "listLeft": "Location",
+                "listRight": "Residence B3"
+            },
+            {
+                "listLeft": "Floor",
+                "listRight": "4"
+            },
+            {
+                "listLeft": "Bed/Bath",
+                "listRight": "1/1"
+            },
+            {
+                "listLeft": "Parking",
+                "listRight": "No"
+            },
+            {
+                "listLeft": "Price",
+                "listRight": "$200,000",
+                "colorClass": "redcolor font-bold"
+            }
+        ],
+        "imgSrc": "/images/floor-plan/luxuryhome.png"
+    },
+    {
+        "tabNumber": 2,
+        "title": "36 m2",
+        "text": "The gracious entry foyer leads to an open kitchen with custom cabinetry, granite countertops, and a built-in dining banquette indone (bedroom homes).",
+        "contentList": [
+            {
+                "listLeft": "Location",
+                "listRight": "Residence B4"
+            },
+            {
+                "listLeft": "Floor",
+                "listRight": "4"
+            },
+            {
+                "listLeft": "Bed/Bath",
+                "listRight": "1/1"
+            },
+            {
+                "listLeft": "Parking",
+                "listRight": "No"
+            },
+            {
+                "listLeft": "Price",
+                "listRight": "$145,000",
+                "colorClass": "redcolor font-bold"
+            }
+        ],
+        "imgSrc": "/images/floor-plan/apartment-3.png"
+    },
+    {
+        "tabNumber": 3,
+        "title": "150 m2",
+        "text": "The gracious entry foyer leads to an open kitchen with custom cabinetry, granite countertops, and a built-in dining banquette indone (bedroom homes).",
+        "contentList": [
+            {
+                "listLeft": "Location",
+                "listRight": "Residence B5"
+            },
+            {
+                "listLeft": "Floor",
+                "listRight": "4"
+            },
+            {
+                "listLeft": "Bed/Bath",
+                "listRight": "1/1"
+            },
+            {
+                "listLeft": "Parking",
+                "listRight": "No"
+            },
+            {
+                "listLeft": "Price",
+                "listRight": "$700,000",
+                "colorClass": "redcolor font-bold"
+            }
+        ],
+        "imgSrc": "/images/floor-plan/apartment.png"
+    },
+    {
+        "tabNumber": 4,
+        "title": "300 m2",
+        "text": "The gracious entry foyer leads to an open kitchen with custom cabinetry, granite countertops, and a built-in dining banquette indone (bedroom homes).",
+        "contentList": [
+            {
+                "listLeft": "Location",
+                "listRight": "Residence B12"
+            },
+            {
+                "listLeft": "Floor",
+                "listRight": "4"
+            },
+            {
+                "listLeft": "Bed/Bath",
+                "listRight": "1/1"
+            },
+            {
+                "listLeft": "Parking",
+                "listRight": "No"
+            },
+            {
+                "listLeft": "Price",
+                "listRight": "$300,000",
+                "colorClass": "redcolor font-bold"
+            }
+        ],
+        "imgSrc": "/images/floor-plan/apartment.png"
+    }
+]

@@ -1,0 +1,59 @@
+<template>
+    <div>
+        <ul class="flex flex-wrap gap-3 sm:gap-5 lg:gap-[30px] justify-center mb-[50px] lg:mb-20">
+            <li class="text-base lg:text-lg cursor-pointer gallery-tab-one" v-for="(tab, Index) in tabs" :key="Index" @click="currentTab = Index" :class="{active: currentTab === Index}">{{tab}}</li>
+        </ul>
+        <div class="content-bd">
+            <div class="tab-content">
+                <div v-if="currentTab === 0">
+                    <GallerySliderAll/>
+                </div>
+                <div v-if="currentTab === 1">
+                    <GallerySliderOne/>
+                </div>
+                <div v-if="currentTab === 2">
+                    <GallerySliderTwo/>
+                </div>
+                <div v-if="currentTab === 3">
+                    <GallerySliderThree/>
+                </div>
+                <div v-if="currentTab === 4">
+                    <GallerySliderFour/>
+                </div>
+                <div v-if="currentTab === 5">
+                    <GallerySliderFive/>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+    export default {
+        components: {
+            GallerySliderAll: () => import('@/components/gallery/GallerySliderAll'),
+            GallerySliderOne: () => import('@/components/gallery/GallerySliderOne'),
+            GallerySliderTwo: () => import('@/components/gallery/GallerySliderTwo'),
+            GallerySliderThree: () => import('@/components/gallery/GallerySliderThree'),
+            GallerySliderFour: () => import('@/components/gallery/GallerySliderFour'),
+            GallerySliderFive: () => import('@/components/gallery/GallerySliderFive'),
+        },
+        data () {
+            return {
+                currentTab: 0,
+                tabs: ['All', 'Living Room', 'Bed Room', 'Bath Room', 'Basement', 'Kitchen']
+            }
+        },
+    }
+</script>
+
+<style lang="scss">
+.videobtn-show{
+    @apply flex;
+}
+.gallery-tab-one{
+    &.active{
+        @apply text-primary;
+    }
+}
+</style>

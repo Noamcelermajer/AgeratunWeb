@@ -1,0 +1,173 @@
+@font-face {
+    font-family: "flaticon";
+
+    src: url("../fonts/flaticon/flaticon.ttf") format("truetype"),
+    url("../fonts/flaticon/flaticon.woff") format("woff"),
+    url("../fonts/flaticon/flaticon.woff2") format("woff2"),
+    url("../fonts/flaticon/flaticon.eot#iefix") format("embedded-opentype"),
+    url("../fonts/flaticon/flaticon.svg#flaticon") format("svg");
+}
+
+.fi:before {
+    font-family: flaticon;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    text-transform: none;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fi-model:before {
+    content: "\f101";
+}
+.fi-boxes:before {
+    content: "\f102";
+}
+.fi-arrow-down:before {
+    content: "\f103";
+}
+.fi-down-arrow:before {
+    content: "\f104";
+}
+.fi-right-arrow-angle:before {
+    content: "\f105";
+}
+.fi-down-chevron:before {
+    content: "\f106";
+}
+.fi-selection:before {
+    content: "\f107";
+}
+.fi-select:before {
+    content: "\f108";
+}
+.fi-building:before {
+    content: "\f109";
+}
+.fi-apartment:before {
+    content: "\f10a";
+}
+.fi-office:before {
+    content: "\f10b";
+}
+.fi-apartment-1:before {
+    content: "\f10c";
+}
+.fi-apartment-2:before {
+    content: "\f10d";
+}
+.fi-apartment-3:before {
+    content: "\f10e";
+}
+.fi-parking:before {
+    content: "\f10f";
+}
+.fi-car-parking:before {
+    content: "\f110";
+}
+.fi-car-park:before {
+    content: "\f111";
+}
+.fi-parking-lot:before {
+    content: "\f112";
+}
+.fi-phone-call:before {
+    content: "\f113";
+}
+.fi-phone:before {
+    content: "\f114";
+}
+.fi-call:before {
+    content: "\f115";
+}
+.fi-menu:before {
+    content: "\f116";
+}
+.fi-line-1:before {
+    content: "\f117";
+}
+.fi-water-waves:before {
+    content: "\f118";
+}
+.fi-safe:before {
+    content: "\f119";
+}
+.fi-shield:before {
+    content: "\f11a";
+}
+.fi-security:before {
+    content: "\f11b";
+}
+.fi-shopping-cart:before {
+    content: "\f11c";
+}
+.fi-shopping-cart-1:before {
+    content: "\f11d";
+}
+.fi-notification:before {
+    content: "\f11e";
+}
+.fi-bell:before {
+    content: "\f11f";
+}
+.fi-spa:before {
+    content: "\f120";
+}
+.fi-flower:before {
+    content: "\f121";
+}
+.fi-conference:before {
+    content: "\f122";
+}
+.fi-conference-room:before {
+    content: "\f123";
+}
+.fi-maps-and-flags:before {
+    content: "\f124";
+}
+.fi-map:before {
+    content: "\f125";
+}
+.fi-location:before {
+    content: "\f126";
+}
+.fi-map-1:before {
+    content: "\f127";
+}
+.fi-user:before {
+    content: "\f128";
+}
+.fi-pulse:before {
+    content: "\f129";
+}
+.fi-pulse-rate:before {
+    content: "\f12a";
+}
+.fi-check:before {
+    content: "\f12b";
+}
+.fi-tick:before {
+    content: "\f12c";
+}
+.fi-check-1:before {
+    content: "\f12d";
+}
+.fi-restaurant:before {
+    content: "\f12e";
+}
+.fi-parking-1:before {
+    content: "\f12f";
+}
+.fi-hospital:before {
+    content: "\f130";
+}
+.fi-bananas:before {
+    content: "\f131";
+}
+.fi-fruit:before {
+    content: "\f132";
+}

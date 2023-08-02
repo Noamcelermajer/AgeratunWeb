@@ -1,0 +1,69 @@
+[
+    {
+        "title": "Living Room",
+        "categories": ["LivingRoom", "Kitchen"],
+        "image": "/images/projects/project-1.jpg",
+        "src": "/images/projects/project-1.jpg"
+    },
+    {
+        "title": "Living Room",
+        "categories": ["BedRoom", "Kitchen"],
+        "image": "/images/projects/project-2.jpg",
+        "src": "/images/projects/project-2.jpg"
+    },
+    {
+        "title": "Living Room",
+        "categories": ["Basement", "BedRoom", "BathRoom"],
+        "image": "/images/projects/project-3.jpg",
+        "src": "/images/projects/Sky Tower.mp4",
+        "videobtnshow": "videobtn-show"
+    },
+    {
+        "title": "Living Room",
+        "categories": ["BathRoom", "LivingRoom"],
+        "image": "/images/projects/project-4.jpg",
+        "src": "/images/projects/project-4.jpg"
+    },
+    {
+        "title": "Living Room",
+        "categories": ["Basement", "LivingRoom"],
+        "image": "/images/projects/project-5.jpg",
+        "src": "/images/projects/project-5.jpg"
+    },
+    {
+        "title": "Living Room",
+        "categories": ["Kitchen", "BathRoom", "BedRoom"],
+        "image": "/images/projects/project-1.jpg",
+        "src": "/images/projects/project-1.jpg"
+    },
+    {
+        "title": "Living Room",
+        "categories": ["Kitchen", "Basement", "BedRoom"],
+        "image": "/images/projects/project-2.jpg",
+        "src": "/images/projects/project-2.jpg"
+    },
+    {
+        "title": "Living Room",
+        "categories": ["LivingRoom", "Kitchen", "BathRoom"],
+        "image": "/images/projects/project-3.jpg",
+        "src": "/images/projects/project-3.jpg"
+    },
+    {
+        "title": "Living Room",
+        "categories": ["LivingRoom", "BathRoom", "Basement"],
+        "image": "/images/projects/project-4.jpg",
+        "src": "/images/projects/project-4.jpg"
+    },
+    {
+        "title": "Living Room",
+        "categories": ["Basement", "BedRoom"],
+        "image": "/images/projects/project-5.jpg",
+        "src": "/images/projects/project-5.jpg"
+    },
+    {
+        "title": "Living Room",
+        "categories": ["Basement", "LivingRoom", "Kitchen", "BathRoom", "BedRoom"],
+        "image": "/images/projects/project-3.jpg",
+        "src": "/images/projects/project-3.jpg"
+    }
+]

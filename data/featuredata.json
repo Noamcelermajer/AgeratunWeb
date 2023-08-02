@@ -1,0 +1,37 @@
+[
+    {
+        "icoClass": "fi fi-phone-call",
+        "title": "Reception",
+        "text": "reception 24/7"
+    },
+    {
+        "icoClass": "fi fi-shield",
+        "title": "Security",
+        "text": "Security team with 24/7 camera system"
+    },
+    {
+        "icoClass": "fi fi-shopping-cart",
+        "title": "Supermarket",
+        "text": "5 Supermarkets setup in each block"
+    },
+    {
+        "icoClass": "fi fi-notification",
+        "title": "Fire Alarm",
+        "text": "Automatic fire extinguishing system in each apartment"
+    },
+    {
+        "icoClass": "fi fi-spa",
+        "title": "Spa and Massage",
+        "text": "Take care your health with Spa & Massage services"
+    },
+    {
+        "icoClass": "fi fi-car-park",
+        "title": "Parking",
+        "text": "The parking area with the capacity more than 20,000 slots car parking,"
+    },
+    {
+        "icoClass": "fi fi-water-waves",
+        "title": "Swimming Pool",
+        "text": "5-star rooftop swimming pool system"
+    }
+]

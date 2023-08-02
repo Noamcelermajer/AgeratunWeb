@@ -1,0 +1,20 @@
+[
+    {
+        "sliderBg": "/images/hero/hero-bg-1.jpg",
+        "subtitle": "Luxury Residence",
+        "titleTop": "Ecostate",
+        "titleBottom": "Park"
+    },
+    {
+        "sliderBg": "/images/hero/hero-bg-2.jpg",
+        "subtitle": "Luxury Residence",
+        "titleTop": "Ecostate",
+        "titleBottom": "Park"
+    },
+    {
+        "sliderBg": "/images/hero/hero-bg-3.jpg",
+        "subtitle": "Luxury Residence",
+        "titleTop": "Ecostate",
+        "titleBottom": "Park"
+    }
+]

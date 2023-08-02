@@ -1,0 +1,27 @@
+[
+    {
+        "image": "/images/activities/activity-1.jpg",
+        "title": "Sport and Leisure",
+        "text": "Improve and care your health with activities at Spa & Massage, Fitness Center, Swimming Pool, Aerial Yoga and more in Eco Park."
+    },
+    {
+        "image": "/images/activities/activity-2.jpg",
+        "title": "Gastronomy",
+        "text": "A chain of culinary restaurants with all European and Asian styles distributed among residential areas, Some high rate restaurants as Lobster Bar, Coffee House, Gaucho Bistro, etc"
+    },
+    {
+        "image": "/images/activities/activity-3.jpg",
+        "title": "Entertaiment",
+        "text": "Explore the premium entertaiment services in Ecostate as 4D Cinema, Premium Playing Ground, Oceanairum, Lectorium, Art Classes, etc"
+    },
+    {
+        "image": "/images/activities/activity-4.jpg",
+        "title": "Shopping",
+        "text": "Have very much stores for you shopping in Ecostate, from luxury brands until medium & small brands as Florist, Aroma Boutique, EcoMart Supermarket, Cosmetic, Adidos Clothes, etc"
+    },
+    {
+        "image": "/images/activities/activity-5.jpg",
+        "title": "Other Services",
+        "text": "And other services essentials around Ecostate Residence waiting you discover"
+    }
+]

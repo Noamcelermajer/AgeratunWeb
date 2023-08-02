@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: #515151;
+        line-height: 1.7333;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        line-height: 1.25;
+        margin-top: 0;
+        margin-bottom: 8px;
+        color: #000000;
+    }
+    a {
+        transition: .4s;
+        &:hover{
+            color: #0EA478;
+        }
+    }
+}
+
+@layer utilities {
+
+}
+
+@layer components {
+    .container-fluid {
+        @apply max-w-[1530px] px-[20px] sm:px-[30px] mx-auto;
+    }
+    .section-padding {
+        @apply xl:py-120 lg:py-[100px] md:py-20 py-60;
+    }
+}

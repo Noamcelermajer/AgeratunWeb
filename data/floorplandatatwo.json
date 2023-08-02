@@ -1,0 +1,85 @@
+[
+    {
+        "tabNumber": 0,
+        "title": "52.4 m2",
+        "text": "Description of apartment [למלא]",
+        "contentList": [
+            {
+                "listLeft": "Location",
+                "listRight": "Residence B2"
+            },
+            {
+                "listLeft": "Floor",
+                "listRight": "4"
+            },
+            {
+                "listLeft": "Bed/Bath",
+                "listRight": "1/1"
+            },
+            {
+                "listLeft": "Parking",
+                "listRight": "No"
+            },
+            {
+                "listLeft": "Price",
+                "listRight": "$125,000",
+                "colorClass": "redcolor font-bold"
+            }
+        ],
+        "imgSrc": "/images/floor-plan/apartment-1.png"
+    },
+    {
+        "tabNumber": 1,
+        "title": "24 m2",
+        "text": "Description of apartment [למלא]",
+        "contentList": [
+            {
+                "listLeft": "Location",
+                "listRight": "Residence B3"
+            },
+            {
+                "listLeft": "Floor",
+                "listRight": "4"
+            },
+            {
+                "listLeft": "Bed/Bath",
+                "listRight": "1/1"
+            },
+            {
+                "listLeft": "Parking",
+                "listRight": "No"
+            },
+            {
+                "listLeft": "Price",
+                "listRight": "$200,000",
+                "colorClass": "redcolor font-bold"
+            }
+        ],
+        "imgSrc": "/images/floor-plan/apartment-2.png"
+    },
+    {
+        "tabNumber": 2,
+        "title": "36 m2",
+        "text": "Description of apartment [למלא]",
+        "contentList": [
+            {
+                "listLeft": "Floor",
+                "listRight": "4"
+            },
+            {
+                "listLeft": "Bed/Bath",
+                "listRight": "1/1"
+            },
+            {
+                "listLeft": "Parking",
+                "listRight": "No"
+            },
+            {
+                "listLeft": "Price",
+                "listRight": "$145,000",
+                "colorClass": "redcolor font-bold"
+            }
+        ],
+        "imgSrc": "/images/floor-plan/apartment-3.png"
+    }
+]
