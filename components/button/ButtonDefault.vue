@@ -1,8 +1,14 @@
 <template>
     <div :class="btnClassParent">
-        <n-link :to="btnLink" :class="btnClass"> <i :class="btnIcon"></i> {{btnText}}</n-link>
+        <n-link v-if="btnLink" :to="btnLink" :class="btnClass">
+            <i :class="btnIcon"></i> {{btnText}}
+        </n-link>
+        <button v-else :class="btnClass" @click="$emit('click', $event)">
+            <i :class="btnIcon"></i> {{btnText}}
+        </button>
     </div>
 </template>
+
 <script>
 export default {
     props: {
@@ -14,6 +20,7 @@ export default {
     }
 }
 </script>
+
 
 <style lang="scss" scoped>
     .btn {

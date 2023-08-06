@@ -25,6 +25,11 @@
                                         :btnClass="'btn-md min-w-[205px] text-center btn btn-primary btn-hover-dark'"
                                         :btnText="'I am interested'"
                                     />
+                                    <ButtonDefault 
+                                    :btnClass="'btn-md min-w-[205px] text-center btn btn-primary btn-hover-dark'"
+                                    :btnText="'Show VR Demo'"
+                                    @click="openIframe(item.iframeSrc)"
+                                  />
                                 </div>
                             </div>
                         </div>
@@ -37,17 +42,37 @@
                 </div>
             </div>
         </div>
+
+        <div v-if="showIframe" class="iframe-popup">
+            <button @click="closeIframeAndRedirect" class="close-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 close-button-svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </button>
+            <button @click="toggleFullscreen" class="fullscreen-button">
+                <svg v-if="isFullscreen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 fullscreen-button-svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 9V4.5M9 9H4.5M9 9L3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5l5.25 5.25" />
+                </svg>
+                <svg v-else xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 fullscreen-button-svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
+                </svg>
+            </button>
+            <iframe :src="iframeSrc" style="width: 100%; height: 100%;"></iframe>
+        </div>
+        
     </div>
 </template>
 
 <script>
 import tabContent from '@/data/floorplandatatwo.json'
 
-
 export default {
   data () {
     return {
       active: 0,
+      showIframe: false,
+      iframeSrc: '',
+      isFullscreen: false,
       categories: [
         "1st Apartment",
         "2nd Apartment",
@@ -59,6 +84,27 @@ export default {
   methods: {
     activate(index) {
       this.active = index;
+    },
+    openIframe(src) {
+      this.showIframe = true;
+      this.iframeSrc = src;
+      document.body.style.overflow = 'auto';
+
+    },
+    closeIframeAndRedirect() {
+      this.showIframe = false;
+      this.$router.push('/');
+    },
+    toggleFullscreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+        this.isFullscreen = true;
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+          this.isFullscreen = false;
+        }
+      }
     },
   }
 }
@@ -86,5 +132,41 @@ export default {
 }
 .redcolor{
     @apply text-[#F92502];
+}
+.iframe-popup {
+    background: #515151;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10000; /* add a high value to ensure the iframe appears on top */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.close-button {
+    position: absolute;
+    top: 10px;
+    left: 10px; /* changed from right to left */
+    background: none;
+    border: none;
+}
+
+.close-button-svg, .fullscreen-button-svg {
+    width: 30px;
+    height: 30px;
+}
+
+.fullscreen-button {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* already on the right */
+    background: none;
+    border: none;
 }
 </style>

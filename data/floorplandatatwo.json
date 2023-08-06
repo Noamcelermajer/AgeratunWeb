@@ -26,7 +26,8 @@
                 "colorClass": "redcolor font-bold"
             }
         ],
-        "imgSrc": "/images/floor-plan/apartment-1.png"
+        "imgSrc": "/images/floor-plan/apartment-1.png",
+        "iframeSrc": "https://editor.rollinom.co.il/360/?id=1410923245"
     },
     {
         "tabNumber": 1,
@@ -55,7 +56,8 @@
                 "colorClass": "redcolor font-bold"
             }
         ],
-        "imgSrc": "/images/floor-plan/apartment-2.png"
+        "imgSrc": "/images/floor-plan/apartment-2.png",
+        "iframeSrc": "https://editor.rollinom.co.il/360/?id=1258153812"
     },
     {
         "tabNumber": 2,
@@ -80,6 +82,7 @@
                 "colorClass": "redcolor font-bold"
             }
         ],
-        "imgSrc": "/images/floor-plan/apartment-3.png"
+        "imgSrc": "/images/floor-plan/apartment-3.png",
+        "iframeSrc": "https://editor.rollinom.co.il/360/?id=822532937"
     }
 ]

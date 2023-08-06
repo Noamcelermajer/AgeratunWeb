@@ -4,7 +4,7 @@
       <div class="absolute top-0 left-0 right-0 z-[999]" :class="{'is-sticky': isSticky}">
         <div class="container-fluid mx-auto">
           <div class="flex justify-between items-center">
-            <div class="flex items-center">
+            <div class="flex items-center" >
               <Logo v-if="!isSticky" class="sm:max-w-[180px] max-w-[150px] mr-20 2xl:mr-[180px] py-[20px]" logLink="/"/>
               <LogoDark v-else class="relative z-50 sm:max-w-[180px] max-w-[150px] mr-20 2xl:mr-[180px] py-[20px]" logLink="/"/>
             </div>
@@ -16,20 +16,12 @@
                     :btnClassParent="'flex'"
                     class="hidden sm:inline-flex"
                 /> 
-                        <!-- Offcanvas Button Start -->
-                        <div class="lg:hidden block leading-[1rem] ml-[10px] sm:ml-[15px]">
-                            <button class="overflow-hidden bg-transparent h-[18px] relative w-[26px]" @click="mobiletoggleClass('addClass', 'show-mobile-menu')">
-                                <span class="w-full h-[2px] bg-white block my-2 transition-all before:content-[''] before:top-0 before:bottom-auto before:absolute before:left-0 before:w-full before:h-[2px] before:bg-white after:content-[''] after:absolute after:left-0 after:w-full after:h-[2px] after:bg-white after:top-auto after:bottom-0"></span>
-                            </button>
-                        </div>
-                        <!-- Offcanvas Button End --> 
+
                     </div>
                 </div>
             </div>
         </div>
         <!-- Header Section End -->
-
-        <OffcanvasSidebar :class="{'show-mobile-menu' : navOpen}" @togglenav="navOpen = !navOpen" />
 
         <!-- Hero Slider Section Start -->
         <div class="relative">
@@ -91,7 +83,7 @@
 
         </div>
         <!-- Floor Plan Section Start -->
-        <div class="bg-[#f5f1ef]">
+        <div class="bg-[#f5f1ef]" id="floor-plans">
             <div class="container-fluid">
                 <div class="section-padding pb-[60px] lg:pb-[100px]">
                     <!-- Section Title Start -->
@@ -170,12 +162,10 @@ export default {
     components: {
         Logo: () => import('@/components/logo/Logo'),
         MainMenu: () => import('@/components/header/MainMenu'),
-        OffcanvasSidebar: () => import('@/components/header/OffcanvasSidebar'),
         ButtonDefault: () => import('@/components/button/ButtonDefault'),
         HeroTwo: () => import('@/components/HeroTwo'),
         FunfactTwo: () => import('@/components/FunfactTwo'),
         SectionTitle: () => import('@/components/title/SectionTitle'),
-        AboutHometwo: () => import('@/components/AboutHometwo'),
         HighlightSection: () => import('@/components/HighlightSection'),
         TabStyleTwo: () => import('@/components/TabStyleTwo'),
         GallerySliderMain: () => import('@/components/gallery/GallerySliderMain'),
@@ -193,40 +183,26 @@ export default {
     }
   },
   methods: {
-    // offcanvas mobile-menu
-    mobiletoggleClass(addRemoveClass, className) {
-      const el = document.querySelector('#offcanvas-menu');
-      if (addRemoveClass === 'addClass') {
-        el.classList.add(className);
-      } else {
-        el.classList.remove(className);
-      }
-    }
-  },
-  mounted(){
-    console.log('LogoDark mounted');
+    mounted(){
 
-    window.addEventListener('scroll', this.updateStickyState);
-  },
-  updated() {
-    console.log('LogoDark updated');
-  },
-  beforeDestroy() {
-    console.log('LogoDark beforeDestroy');
+      window.addEventListener('scroll', this.updateStickyState);
+    },
+    updated() {
+    },
+    beforeDestroy() {
 
-    window.removeEventListener('scroll', this.updateStickyState);
-  },
-  methods: {
-    updateStickyState() {
-      let scrollPos = window.scrollY
-      if(scrollPos >= 100){
-        this.isSticky = true
-      } else {
-        this.isSticky = false
+      window.removeEventListener('scroll', this.updateStickyState);
+    },
+      updateStickyState() {
+        let scrollPos = window.scrollY
+        if(scrollPos >= 100){
+          this.isSticky = true
+        } else {
+          this.isSticky = false
+        }
       }
-    }
-}
-}
+  }
+} 
 
 </script>
 <style lang='scss' scoped>

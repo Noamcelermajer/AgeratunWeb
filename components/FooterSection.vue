@@ -27,7 +27,7 @@
                     <div class="footer-social sm:w-1/2 w-full">
                         <h4 class="footer-widget-title d-lg-none">Follow Us On</h4>
                         <div class="social flex gap-2">
-                            <a href="#" class="relative flex items-center justify-center w-[45px] h-[45px] rounded-full hover:bg-primary hover:text-white transition-all duration-300 bg-[#f3f3f9]"><i class="text-[14px] fa fa-instagram"></i></a>
+                            <a href="" class="relative flex items-center justify-center w-[45px] h-[45px] rounded-full hover:bg-primary hover:text-white transition-all duration-300 bg-[#f3f3f9]"><i class="text-[14px] fa fa-instagram"></i></a>
                             <a href="https://www.instagram.com/ageratun" class="relative flex items-center justify-center w-[45px] h-[45px] rounded-full hover:bg-primary hover:text-white transition-all duration-300 bg-[#f3f3f9]"><i class="text-[14px] fa fa-facebook"></i></a>
                             <a href="#" class="relative flex items-center justify-center w-[45px] h-[45px] rounded-full hover:bg-primary hover:text-white transition-all duration-300 bg-[#f3f3f9]"><i class="text-[14px] fa fa-twitter"></i></a>
                         </div>

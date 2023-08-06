@@ -38,7 +38,12 @@
 <script>
     export default {
         components: {
-            GallerySliderAll: () => import('@/components/gallery/GallerySliderAll')
+            GallerySliderAll: () => import('@/components/gallery/GallerySliderAll'),
+            GallerySliderOne: () => import('@/components/gallery/GallerySliderOne'),
+            GallerySliderTwo: () => import('@/components/gallery/GallerySliderTwo'),
+            GallerySliderThree: () => import('@/components/gallery/GallerySliderThree'),
+            GallerySliderFour: () => import('@/components/gallery/GallerySliderFour'),
+            GallerySliderFive: () => import('@/components/gallery/GallerySliderFive'),
         },
         data () {
             return {

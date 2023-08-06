@@ -17,13 +17,7 @@
                             :btnClassParent="'flex'"
                             class="hidden sm:inline-flex"
                         />
-                        <!-- Offcanvas Button Start -->
-                        <div class="lg:hidden block leading-[1rem] ml-[10px] sm:ml-[15px]">
-                            <button class="overflow-hidden bg-transparent h-[18px] relative w-[26px]" @click="mobiletoggleClass('addClass', 'show-mobile-menu')">
-                                <span class="w-full h-[2px] bg-black block my-2 transition-all before:content-[''] before:top-0 before:bottom-auto before:absolute before:left-0 before:w-full before:h-[2px] before:bg-black after:content-[''] after:absolute after:left-0 after:w-full after:h-[2px] after:bg-black after:top-auto after:bottom-0"></span>
-                            </button>
-                        </div>
-                        <!-- Offcanvas Button End --> 
+
                     </div>
                 </div>
                 <div class="border-class flex w-full h-[1px] bg-white border-b-1 border-bordercolor"></div>
@@ -53,7 +47,6 @@
         components: {
             LogoDark: () => import('@/components/logo/LogoDark'),
             MainMenu: () => import('@/components/header/MainMenu'),
-            OffcanvasSidebar: () => import('@/components/header/OffcanvasSidebar'),
             ButtonDefault: () => import('@/components/button/ButtonDefault'),
             BreadcrumbSection: () => import('@/components/BreadcrumbSection'),
             BookingSection: () => import('@/components/BookingSection'),
