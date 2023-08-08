@@ -16,7 +16,7 @@
                     </div>
                     <div>
                         <h3 class="text-2xl mb-4">Cancellation policy</h3>
-                        <p>Free cancellation within 48 hours after successful booking and 5 days before check-in time. Then, cancel the room 5 days before the check-in time, 100% refund of the total amount paid (minus the service fee). <n-link to="/contact">Details</n-link></p>
+                        <p>Free cancellation within 48 hours after successful booking and 5 days before check-in time. Then, cancel the room 5 days before the check-in time, 100% refund of the total amount paid (minus the service fee). <n-link to="/">Details</n-link></p>
                     </div>
                 </div>
             </div>

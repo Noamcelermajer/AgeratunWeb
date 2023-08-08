@@ -11,7 +11,7 @@
                     </div>
                     <div class="flex items-center">
                         <ButtonDefault
-                            :btnLink="'/contact'"
+                            :btnLink="'/'"
                             :btnClass="'btn-sm btn btn-hover-primary btn-outline-black'"
                             :btnText="'Schedule a visit'"
                             :btnClassParent="'flex'"
