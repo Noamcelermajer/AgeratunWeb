@@ -9697,6 +9697,11 @@ vue-backtotop@^1.6.1:
   dependencies:
     vue "2.3.3"
 
+vue-bot-ui@^0.2.8:
+  version "0.2.8"
+  resolved "https://registry.npmjs.org/vue-bot-ui/-/vue-bot-ui-0.2.8.tgz"
+  integrity sha512-xT01ZMIkaEItrbrHztTkIphjiEK3qbhZIcXYgIP5+FSxJo3/w4a/dMfaYlu7YE9PMLJX2U1WmD776m26S4SjHQ==
+
 vue-client-only@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/vue-client-only/-/vue-client-only-2.1.0.tgz"

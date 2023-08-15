@@ -17,6 +17,7 @@
     "swiper": "5.4.5",
     "vue-awesome-swiper": "4.1.1",
     "vue-backtotop": "^1.6.1",
+    "vue-bot-ui": "^0.2.8",
     "vue-cool-lightbox": "^2.7.4",
     "vue-count-to": "^1.0.13",
     "vue-disqus": "^4.0.1",
