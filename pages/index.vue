@@ -169,7 +169,6 @@ export default {
         HighlightSection: () => import('@/components/HighlightSection'),
         TabStyleTwo: () => import('@/components/TabStyleTwo'),
         GallerySliderMain: () => import('@/components/gallery/GallerySliderMain'),
-        TestimonialTwo: () => import('@/components/TestimonialTwo'),
         LocationStateTwo: () => import('@/components/LocationStateTwo'),
         HomeTwoContact: () => import('@/components/HomeTwoContact'),
         FooterSectionTwo: () => import('@/components/FooterSectionTwo'),

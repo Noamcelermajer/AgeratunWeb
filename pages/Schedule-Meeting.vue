@@ -1,172 +1,692 @@
 <template>
-    <div>
-
-        <!-- Header Section Start -->
-        <div class="relative top-0 left-0 right-0 z-[999]" :class="{'is-sticky': isSticky}">
-            <div class="container-fluid mx-auto">
-                <div class="flex justify-between items-center">
-                    <div class="flex items-center">
-                        <LogoDark class="sm:max-w-[180px] max-w-[150px] mr-20 2xl:mr-[180px] py-[20px]" logLink="/"/>
-                        <MainMenu :textClass="'text-black sticky-height'"/>
-                    </div>
-                    <div class="flex items-center">
-                        <ButtonDefault
-                            :btnLink="'/contact'"
-                            :btnClass="'btn-sm btn btn-hover-primary btn-outline-black'"
-                            :btnText="'Schedule a visit'"
-                            :btnClassParent="'flex'"
-                            class="hidden sm:inline-flex"
-                        />
-                    </div>
-                </div>
-                <div class="border-class flex w-full h-[1px] bg-white border-b-1 border-bordercolor"></div>
-            </div>
+    <div class="contact_us_8">
+  <div class="responsive-container-block container">
+    <form class="form-box">
+      <div class="container-block form-wrapper">
+        <div class="responsive-container-block">
+          <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-8 wk-ipadp-12" id="i10mt-9">
+            <input class="input" id="ijowk-9" name="FirstName" placeholder="First Name">
+          </div>
+          <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-8 wk-ipadp-12" id="ieakm">
+            <input class="input" id="indfi-7" name="Last Name" placeholder="Last Name">
+          </div>
+          <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-8 wk-ipadp-12" id="iajvf">
+            <input class="input" id="ipmgh-9" name="Email" placeholder="Email">
+          </div>
+          <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-8 wk-ipadp-12" id="i0txn">
+            <input class="input" id="imgis-8" name="PhoneNumber" placeholder="Phone Number">
+          </div>
+          <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-8 wk-ipadp-12" id="i634i-9">
+            <textarea aria-placeholder="What’s on your mind?" class="textinput" id="i5vyy-9" placeholder="What’s on your mind?"></textarea>
+          </div>
         </div>
-        <!-- Breadcrumb Section Start -->
-        <BreadcrumbSection :BreadcrumbSubTitle="'Contact us'" :BreadcrumbTitle="'Contact'"/>
-        <!-- Breadcrumb Section End -->
-
-         <!-- Contact Address and Location Section Start -->
-    <div class="container-fluid">
-        <div class="section-padding pt-0">
-          <div class="centered">
-            <h2 class="content-block-title">Subscribe for Project Information</h2>
-            <ul class="feature-list flex flex-wrap flex-col md:flex-row mb-10 md:mb-16">
-              <li v-for="(item, imageIndex) in items" :key="imageIndex" class="text-lg pb-6 last:pb-0 relative table md:w-1/2 pl-10 text-black last:mb-0 before:content-['\f12d'] before:font-[flaticon] before:text-xs before:absolute before:top-0 md:before:top-1 before:left-0 before:w-6 h-6 before:text-center before:text-white before:rounded-full before:bg-primary before:leading-[24px]">{{item.title}}</li>
-            </ul>
-            <form id="contact-form" class="grid gap-x-10 grid-cols-2" action="https://getform.io/f/6af30b8c-e767-4d30-b964-d7e38d35078b" method="POST">
-              <div class="single-fild col-span-2 sm:col-span-1 mb-5">
-                <input type="text" class="text-[15px] relative block w-full h-[50px] py-4 transition-all duration-500 text-[#515151] border-t-0 border-x-0 border-b-1 border-[#cfcfd4] rounded-[4px] bg-transparent focus:border-t-0 focus:border-x-0 focus:border-black focus:shadow-none focus-visible:outline-0" placeholder="Name">
-              </div>
-              <div class="single-fild col-span-2 sm:col-span-1 mb-5">
-                <input type="text" class=" text-[15px] relative block w-full h-[50px] py-4 transition-all duration-500 text-[#515151] border-t-0 border-x-0 border-b-1 border-[#cfcfd4] rounded-[4px] bg-transparent focus:border-t-0 focus:border-x-0 focus:border-black focus:shadow-none focus-visible:outline-0" placeholder="Phone">
-              </div>
-              <div class="single-fild col-span-2 mb-5">
-                <input type="email" class=" text-[15px] relative block w-full h-[50px] py-4 transition-all duration-500 text-[#515151] border-t-0 border-x-0 border-b-1 border-[#cfcfd4] rounded-[4px] bg-transparent focus:border-t-0 focus:border-x-0 focus:border-black focus:shadow-none focus-visible:outline-0" placeholder="E-mail">
-              </div>
-              <div class="single-fild col-span-2">
-                <textarea class="h-32 mb-6 text-[15px] relative block w-full py-4 transition-all duration-500 text-[#515151] border-t-0 border-x-0 border-b-1 border-[#cfcfd4] rounded-[4px] bg-transparent focus:border-t-0 focus:border-x-0 focus:border-black focus:shadow-none focus-visible:outline-0" placeholder="Write from here" spellcheck="false" data-gramm="false"></textarea>
-                <div class="flex justify-start w-full md:mt-10">
-                  <button type="submit" value="submit" name="submit" class="btn btn-md btn-light btn-hover-primary max-w-[150px] md:max-w-[200px] w-full">Submit</button>
-                  <p class="form-messege"></p>
-                </div>
-              </div>
-            </form>
+        <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-8 wk-ipadp-12 checkbox-container" id="i634i-2-2">
+          <div class="checkboc-container">
+            <input id="i0m1w" type="checkbox">
+            <p class="checkbox-text" id="i5ywz">
+              Turpis blandit massa interdum quam amet.
+            </p>
+          </div>
+        </div>
+        <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-8 wk-ipadp-12" id="i0txn-2">
+          <button class="submit-btn">
+            Submit
+          </button>
+        </div>
+        <div class="right-side-text">
+          <p class="text-blk contactus-head">
+            Get in Touch
+          </p>
+          <p class="text-blk contactus-subhead">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis diam lectus sapien.
+          </p>
+          <div class="social-media-links">
+            <a href="#" id="ix94i-2-3">
+              <img class="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-twitter.png">
+            </a>
+            <a href="#">
+              <img class="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-facebook.png">
+            </a>
+            <a href="#">
+              <img class="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-google.png">
+            </a>
+            <a href="#" id="izldf-2-3">
+              <img class="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png">
+            </a>
           </div>
         </div>
       </div>
-      <!-- Contact Address and Location Section End -->
-        <!-- Footer Section Start -->
-        <FooterSection/>
-        <!-- Footer Section End -->
-
-    </div>
+    </form>
+  </div>
+</div>
 </template>
 
-<script>
-    export default {
-        components: {
-            LogoDark: () => import('@/components/logo/LogoDark'),
-            MainMenu: () => import('@/components/header/MainMenu'),
-            ButtonDefault: () => import('@/components/button/ButtonDefault'),
-            BreadcrumbSection: () => import('@/components/BreadcrumbSection'),
-            AgentSection: () => import('@/components/AgentSection'),
-            SectionTitle: () => import('@/components/title/SectionTitle')
-        },
-        data () {
-            return {
-                isSticky: false,
-                navOpen: false,
-                active: 0,
-                location: [
-                    {
-                        id: "map-location-1",
-                        name: "Gaucho Restaurant",
-                        style: "top: 20%; left: 35%"
-                    },
-                    {
-                        id: "map-location-2",
-                        name: "Manhattan Hospital",
-                        style: "left: 18%; top: 45%"
-                    },
-                    {
-                        id: "map-location-3",
-                        name: "Costco Supermarket Center",
-                        style: "left: 28%; bottom: 25%"
-                    },
-                    {
-                        id: "map-location-4",
-                        name: "Ecostate Park",
-                        style: "left: 48%; top: 25%"
-                    },
-                    {
-                        id: "map-location-5",
-                        name: "Harvard University",
-                        style: "right: 31%; bottom: 39%"
-                    }
-                ]
-            }
-        },
-        methods: {
-            // offcanvas mobile-menu
-            mobiletoggleClass(addRemoveClass, className) {
-                const el = document.querySelector('#offcanvas-menu');
-                if (addRemoveClass === 'addClass') {
-                    el.classList.add(className);
-                } else {
-                    el.classList.remove(className);
-                }
-            },
-                        
-            activate(index) {
-                this.active = index;
-            }
-        },
-        mounted(){
-            window.addEventListener('scroll', () => {
-                let scrollPos = window.scrollY
-                if(scrollPos >= 100){
-                    this.isSticky = true
-                } else {
-                    this.isSticky = false
-                }
-            })
-        }
-    }
-</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
 
-<style lang='scss' scoped>
-.centered {
-    @apply flex justify-center items-center min-h-screen bg-gray-100;
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.wk-desk-1 {
+  width: 8.333333%;
+}
+
+.wk-desk-2 {
+  width: 16.666667%;
+}
+
+.wk-desk-3 {
+  width: 25%;
+}
+
+.wk-desk-4 {
+  width: 33.333333%;
+}
+
+.wk-desk-5 {
+  width: 41.666667%;
+}
+
+.wk-desk-6 {
+  width: 50%;
+}
+
+.wk-desk-7 {
+  width: 58.333333%;
+}
+
+.wk-desk-8 {
+  width: 66.666667%;
+}
+
+.wk-desk-9 {
+  width: 75%;
+}
+
+.wk-desk-10 {
+  width: 83.333333%;
+}
+
+.wk-desk-11 {
+  width: 91.666667%;
+}
+
+.wk-desk-12 {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .wk-ipadp-1 {
+    width: 8.333333%;
   }
-.map-location-layer{
-    @apply relative -mt-0 2xl:-mt-[120px];
+
+  .wk-ipadp-2 {
+    width: 16.666667%;
+  }
+
+  .wk-ipadp-3 {
+    width: 25%;
+  }
+
+  .wk-ipadp-4 {
+    width: 33.333333%;
+  }
+
+  .wk-ipadp-5 {
+    width: 41.666667%;
+  }
+
+  .wk-ipadp-6 {
+    width: 50%;
+  }
+
+  .wk-ipadp-7 {
+    width: 58.333333%;
+  }
+
+  .wk-ipadp-8 {
+    width: 66.666667%;
+  }
+
+  .wk-ipadp-9 {
+    width: 75%;
+  }
+
+  .wk-ipadp-10 {
+    width: 83.333333%;
+  }
+
+  .wk-ipadp-11 {
+    width: 91.666667%;
+  }
+
+  .wk-ipadp-12 {
+    width: 100%;
+  }
 }
-.map-location-item{
 
-    @apply absolute w-[10px] h-[10px] cursor-pointer rounded-full bg-primary shadow-[0_0_0_10px_rgba(14,164,120,0.1)];
+@media (max-width: 768px) {
+  .wk-tab-1 {
+    width: 8.333333%;
+  }
 
-    & .title {
-        @apply opacity-0 invisible text-sm whitespace-nowrap font-semibold absolute -top-[70px] left-1/2 transform -translate-x-1/2 text-black py-1 px-4 transition-all duration-500 rounded-[4px] bg-white shadow-[0_10px_40px_0_rgba(0,0,0,0.15)] before:absolute before:-bottom-6 before:left-1/2 before:w-[10px] before:h-6 before:transform before:-translate-x-1/2 before:bg-white before:content-[''];
+  .wk-tab-2 {
+    width: 16.666667%;
+  }
 
-        &::before {
-            clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 50% 100%, 0% 0%);
-        }
-    }
-    &.active {
-        & .title {
-            @apply opacity-100 visible duration-500 transition-all
-        }
-    }
+  .wk-tab-3 {
+    width: 25%;
+  }
+
+  .wk-tab-4 {
+    width: 33.333333%;
+  }
+
+  .wk-tab-5 {
+    width: 41.666667%;
+  }
+
+  .wk-tab-6 {
+    width: 50%;
+  }
+
+  .wk-tab-7 {
+    width: 58.333333%;
+  }
+
+  .wk-tab-8 {
+    width: 66.666667%;
+  }
+
+  .wk-tab-9 {
+    width: 75%;
+  }
+
+  .wk-tab-10 {
+    width: 83.333333%;
+  }
+
+  .wk-tab-11 {
+    width: 91.666667%;
+  }
+
+  .wk-tab-12 {
+    width: 100%;
+  }
 }
-.google-map-link {
-    @apply absolute bottom-0 left-0 w-full text-center text-[#064DF0];
-}
-.is-sticky {
-    @apply bg-white transition-all shadow-[2px_4px_8px_rgba(52,58,64,0.15)] fixed z-9999;
 
-    & .border-class {
-        @apply hidden;
-    }
+@media (max-width: 500px) {
+  .wk-mobile-1 {
+    width: 8.333333%;
+  }
+
+  .wk-mobile-2 {
+    width: 16.666667%;
+  }
+
+  .wk-mobile-3 {
+    width: 25%;
+  }
+
+  .wk-mobile-4 {
+    width: 33.333333%;
+  }
+
+  .wk-mobile-5 {
+    width: 41.666667%;
+  }
+
+  .wk-mobile-6 {
+    width: 50%;
+  }
+
+  .wk-mobile-7 {
+    width: 58.333333%;
+  }
+
+  .wk-mobile-8 {
+    width: 66.666667%;
+  }
+
+  .wk-mobile-9 {
+    width: 75%;
+  }
+
+  .wk-mobile-10 {
+    width: 83.333333%;
+  }
+
+  .wk-mobile-11 {
+    width: 91.666667%;
+  }
+
+  .wk-mobile-12 {
+    width: 100%;
+  }
+}
+.contact_us_8 * {
+  font-family: Nunito, sans-serif;
+}
+
+.contact_us_8 .text-blk {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  line-height: 25px;
+}
+
+.contact_us_8 .responsive-cell-block {
+  min-height: 75px;
+}
+
+.contact_us_8 .container-block {
+  min-height: 75px;
+  height: fit-content;
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  display: block;
+}
+
+.contact_us_8 input:focus {
+  outline-color: initial;
+  outline-style: none;
+  outline-width: initial;
+}
+
+.contact_us_8 .responsive-container-block {
+  min-height: 75px;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+}
+
+.contact_us_8 .responsive-container-block.big-container {
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  background-color: #F0BF4C;
+  position: absolute;
+  height: 300px;
+}
+
+.contact_us_8 .responsive-container-block.container {
+  position: static;
+  min-height: 75px;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.contact_us_8 .container-block.form-wrapper {
+  background-color: white;
+  max-width: 610px;
+  text-align: center;
+  padding-top: 50px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  position: static;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin: 50px 0 50px 0;
+}
+
+.contact_us_8 .text-blk.contactus-head {
+  font-size: 36px;
+  line-height: 45px;
+  font-weight: 900;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+}
+
+.contact_us_8 .text-blk.contactus-subhead {
+  color: black;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 30px;
+  margin-left: 0px;
+  max-width: 300px;
+}
+
+.contact_us_8 .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12 {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 26px;
+  margin-left: 0px;
+  min-height: 50px;
+}
+
+.contact_us_8 .input {
+  width: 100%;
+  height: 50px;
+  padding-top: 1px;
+  padding-right: 15px;
+  padding-bottom: 1px;
+  padding-left: 15px;
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: #eeeeee;
+  border-right-color: #eeeeee;
+  border-bottom-color: #eeeeee;
+  border-left-color: #eeeeee;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  font-size: 16px;
+  border-top-left-radius: 64px;
+  border-top-right-radius: 64px;
+  border-bottom-right-radius: 64px;
+  border-bottom-left-radius: 64px;
+}
+
+.contact_us_8 .textinput {
+  width: 100%;
+  min-height: 150px;
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: #eeeeee;
+  border-right-color: #eeeeee;
+  border-bottom-color: #eeeeee;
+  border-left-color: #eeeeee;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  font-size: 16px;
+}
+
+.contact_us_8 .submit-btn {
+  width: 100%;
+  background-color: #F0BF4C;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-top-style: outset;
+  border-right-style: outset;
+  border-bottom-style: outset;
+  border-left-style: outset;
+  border-top-color: #767676;
+  border-right-color: #767676;
+  border-bottom-color: #767676;
+  border-left-color: #767676;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  border-top-left-radius: 64px;
+  border-top-right-radius: 64px;
+  border-bottom-right-radius: 64px;
+  border-bottom-left-radius: 64px;
+}
+
+.contact_us_8 .form-box {
+  position: relative;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-bottom: 60px;
+  margin-left: auto;
+  max-width: 830px;
+  width: 100%;
+}
+
+.contact_us_8 ::placeholder {
+  color: #dadada;
+}
+
+.contact_us_8 .right-side-text {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  right: 0;
+  background-color: #F0BF4C;
+  max-width: 363px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_us_8 .social-media-links {
+  width: 230px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact_us_8 .checkboc-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact_us_8 .checkbox-text {
+  color: #9c9c9c;
+  margin-top: 16px;
+  margin-right: 0px;
+  margin-bottom: 16px;
+  margin-left: 10px;
+  margin: 0 0 0 10px;
+  text-align: left;
+}
+
+.contact_us_8 .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-8.wk-ipadp-12.checkbox-container {
+  min-height: 30px;
+  margin: 0 0 30px 0;
+}
+
+@media (max-width: 1024px) {
+  .contact_us_8 .right-side-text {
+    right: 0px;
+    top: 0px;
+    height: 250px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contact_us_8 .container-block.form-wrapper {
+    margin-top: 200px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    padding-top: 70px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+  }
+
+  .contact_us_8 .form-box {
+    margin-top: 60px;
+    margin-right: auto;
+    margin-bottom: 60px;
+    margin-left: auto;
+  }
+
+  .contact_us_8 .text-blk.contactus-subhead {
+    max-width: 400px;
+  }
+
+  .contact_us_8 .right-side-text {
+    width: 85%;
+    left: 0px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+  }
+
+  .contact_us_8 .form-box {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact_us_8 .submit-btn {
+    width: 100%;
+  }
+
+  .contact_us_8 .input {
+    width: 100%;
+  }
+
+  .contact_us_8 .textinput {
+    width: 100%;
+  }
+
+  .contact_us_8 .container-block.form-wrapper {
+    margin-top: 80px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .contact_us_8 .container-block.form-wrapper {
+    margin-top: 200px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
+
+  .contact_us_8 .text-blk.contactus-head {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact_us_8 .container-block.form-wrapper {
+    padding-top: 50px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+  }
+
+  .contact_us_8 .container-block.form-wrapper {
+    margin-top: 60px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .contact_us_8 .responsive-cell-block.wk-ipadp-6.wk-tab-12.wk-mobile-12.wk-desk-6 {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+  }
+
+  .contact_us_8 .responsive-container-block {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 35px;
+    margin-left: 0px;
+  }
+
+  .contact_us_8 .container-block.form-wrapper {
+    margin-top: 220px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
+
+  .contact_us_8 .right-side-text {
+    width: 100%;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    left: 0px;
+    max-width: 310px;
+  }
+
+  .contact_us_8 .right-side-text {
+    max-width: 280px;
+  }
+
+  .contact_us_8 .text-blk.contactus-head {
+    font-size: 26px;
+    line-height: 34px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+  }
+
+  .contact_us_8 .text-blk.contactus-subhead {
+    max-width: 250px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+
+  .contact_us_8 .form-box {
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+  }
+
+  .contact_us_8 .checkboc-container {
+    align-items: flex-start;
+  }
+
+  .contact_us_8 .input {
+    height: 45px;
+  }
 }
 </style>

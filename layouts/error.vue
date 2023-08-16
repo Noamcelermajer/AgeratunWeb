@@ -54,10 +54,6 @@
         </div>
         <!-- Error Section End -->
 
-        <!-- Footer Section Start -->
-        <FooterSection/>
-        <!-- Footer Section End -->
-
     </div>
 </template>
 
