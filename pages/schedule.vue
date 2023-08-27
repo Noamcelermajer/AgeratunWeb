@@ -1,67 +1,20 @@
 <template>
-  <div>
-    <!-- Header Component -->
-    <div class="absolute top-0 left-0 right-0 z-[999]" :class="{'is-sticky': isSticky}">
-      <div class="container-fluid mx-auto">
-        <div class="flex justify-between items-center">
-          <div class="flex items-center" >
-            <Logo v-if="!isSticky" class="sm:max-w-[180px] max-w-[150px] mr-20 2xl:mr-[180px] py-[20px]" logLink="/"/>
-            <LogoDark v-else class="relative z-50 sm:max-w-[180px] max-w-[150px] mr-20 2xl:mr-[180px] py-[20px]" logLink="/"/>
-          </div>
-          <div class="flex items-center">
-            <ButtonDefault 
-            :btnLink="'#contact-section'"
-            :btnClass="'btn-sm btn btn-hover-primary btn-outline-light'"
-            :btnText="'Schedule a visit'"
-            :btnClassParent="'flex'"
-            class="hidden sm:inline-flex"
-            @click="askForAppointment" 
-          />
-
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="spacer-header"></div>
-
-
-    <!-- Contact Form (Schedule Section) -->
-    <Contact v-if="!showScheduleAppointment" @contactFinished="askForAppointment" />
-
-    <!-- Schedule Appointment Component -->
-    <ScheduleAppointment v-if="showScheduleAppointment" />
-
-    <!-- Footer Component -->
-    <FooterSectionTwo />
-  </div>
+    <Chatbot/>
 </template>
 
 
 <script>
-import MainHeader from '@/components/header/MainHeader.vue';
-import FooterSectionTwo from '@/components/FooterSectionTwo.vue';
-import Contact from '@/components/Contact.vue';
-import ScheduleAppointment from '@/components/Schedule-Appointment.vue'; // Updated import path
-
+import Chatbot from '../components/Chatbot.vue';
 export default {
   components: {
-    MainHeader,
-    FooterSectionTwo,
-    Contact,
-    ScheduleAppointment,
+    Chatbot,
   },
   data() {
     return {
-      showScheduleAppointment: false,
       isSticky: false,
     };
   },
   methods: {
-  askForAppointment() {
-    if (confirm('Would you like to appoint a meeting?')) {
-      this.showScheduleAppointment = true;
-    }
-  },
 },
 };
 </script>
