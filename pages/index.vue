@@ -36,9 +36,7 @@
         <!-- Funfact Section End -->
 
         <!-- About Section Start -->
-        <div class="bg-themedark relative before:content-[''] before:absolute before:top-full before:left-0 before:w-full before:h-[50px] md:before:h-[70px] lg:before:h-[133px] before:bg-no-repeat before:bg-center before:bg-cover">
-            <AboutHometwo />
-          </div>
+
           
         <!-- About Section End -->
         <div class="container-fluid">
@@ -116,8 +114,6 @@
         </div>
         <!-- Gallery Section End -->
 
-
-        <!-- Testimonial Section End -->
 
         <!-- Location State Section Start -->
         <div class="bg-themedark relative before:content-[''] before:absolute before:bottom-full before:left-0 before:w-full before:h-[50px] md:before:h-[70px] lg:before:h-[133px] mt-[50px] md:mt-[70px] lg:mt-[133px] before:bg-no-repeat before:bg-center before:bg-cover ">

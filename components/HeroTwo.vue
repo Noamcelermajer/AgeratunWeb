@@ -16,7 +16,7 @@
                             <img class="w-full h-full object-cover" src="images/shapes/price-box.png" alt="Pricing-Shape" style="opacity:0.4;filter:alpha(opacity=40);">
                         </div>
                         <h6 class="block text-base font-semibold mb-7 sm:mb-12 uppercase text-white">Initial Price</h6>
-                        <h2 class="block font-play text-[54px] sm:text-[84px] font-normal leading-[1.071] relative mb-5 sm:mb-6 text-[#FFCA3B]">89,000€</h2>
+                        <h2 class="block font-play text-[54px] sm:text-[84px] font-normal leading-[1.071] relative mb-5 sm:mb-6 text-[#FFCA3B]">120,000€</h2>
                         <h3 class="sm:text-[30px] text-xl font-normal relative block mb-12 sm:mb-[53px] text-white">Tax Included</h3>
                         <div class="block w-full mb-9 sm:mb-12">
                             <ButtonDefault 
@@ -29,7 +29,7 @@
                         </div>
                         <div class="relative block pl-16">
                             <span class="text-xs leading-1 absolute top-0 left-0 uppercase text-white">call<br>direct </span>
-                            <a class="sm:text-2xl text-xl font-normal leading-7 text-white" href="tel:+5435682625">050000000</a>
+                            <a class="sm:text-2xl text-xl font-normal leading-7 text-white" href="tel:+5435682625">+97250000000</a>
                         </div>
                     </div>
                 </div>

@@ -23,24 +23,29 @@ export default {
                         text: "receptionist serve 24/7"
                     },
                     {
-                        title: "Managing Application",
+                        title: "Sea View",
                         icoClass: "fi fi-shield",
-                        text: "Application to monitor apartement availability"
+                        text: "First line view to the sea"
                     },
                     {
-                        title: "Fire Alarm",
+                        title: "Rooftop bar & restaurant",
+                        icoClass: "fi fi-shield",
+                        text: "First line view to the sea"
+                    },
+                    {
+                        title: "furnished complete",
                         icoClass: "fi fi-notification",
-                        text: "Automatic fire extinguishing system in each apartment"
+                        text: "Each apartment is completly furnished and equiped"
                     },
                     {
                         title: "Car Parking",
                         icoClass: "fi fi-car-park",
-                        text: "The parking area with the capacity more than 20,000 slots car parking"
+                        text: ""
                     },
                     {
-                        title: "Air Conditioner",
+                        title: "Architect building design",
                         icoClass: "fi fi-line-1",
-                        text: "Ensure ventilation & air circulation in your home with air conditioning system"
+                        text: ""
                     },
                     {
                         title: "Spa and Gym",
@@ -48,9 +53,9 @@ export default {
                         text: "Take care your health with Spa & Equipped gym"
                     },
                     {
-                        title: "Outdoor Pool",
+                        title: "Infinity Pool",
                         icoClass: "fi fi-water-waves",
-                        text: "rooftop swimming pool system"
+                        text: "Infinity swimming pool system"
                     }
                 ]
             }

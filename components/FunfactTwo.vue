@@ -26,28 +26,28 @@
                 counter: [
                     {
                         startVal: 0,
-                        endVal: 1520,
-                        text: "Square Feet"
+                        endVal: 8,
+                        text: "Floors"
                     },
                     {
                         startVal: 0,
-                        endVal: 6,
-                        text: "Bed Room"
+                        endVal: 3,
+                        text: "Pool"
                     },
                     {
                         startVal: 0,
-                        endVal: 4,
-                        text: "Bath Room"
+                        endVal: 1,
+                        text: "Rooftop Bar"
                     },
                     {
                         startVal: 0,
-                        endVal: 2,
+                        endVal: 1,
                         text: "Car Parking"
                     },
                     {
                         startVal: 0,
                         endVal: 1,
-                        text: "Outdoor Pool"
+                        text: "Gym & Spa"
                     }
                 ]
             }

@@ -23,6 +23,13 @@ export default {
     };
   },
   methods: {
+    fetchTimeSlots() {
+      axios.get('http://localhost:5000/api/timeslots')
+        .then(response => {
+          this.availableTimeSlots = response.data;
+          this.currentOptions = this.availableTimeSlots;  // Enable buttons for available timeslots
+        });
+    },
     getNextSevenDays() {
       const days = [];
       for (let i = 0; i < 7; i++) {

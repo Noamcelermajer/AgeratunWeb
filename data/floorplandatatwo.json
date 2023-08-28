@@ -1,29 +1,20 @@
 [
     {
         "tabNumber": 0,
-        "title": "52.4 m2",
-        "text": "Description of apartment [למלא]",
+        "title": "37.95 m2",
+        "text": "",
         "contentList": [
             {
-                "listLeft": "Location",
-                "listRight": "Residence B2"
+                "listLeft": "Rooms",
+                "listRight": "1+1"
             },
             {
                 "listLeft": "Floor",
                 "listRight": "4"
             },
             {
-                "listLeft": "Bed/Bath",
-                "listRight": "1/1"
-            },
-            {
-                "listLeft": "Parking",
-                "listRight": "No"
-            },
-            {
-                "listLeft": "Price",
-                "listRight": "$125,000",
-                "colorClass": "redcolor font-bold"
+                "listLeft": "View",
+                "listRight": "GARDEN+ PORT"
             }
         ],
         "imgSrc": "/images/floor-plan/apartment-1.png",
@@ -31,29 +22,20 @@
     },
     {
         "tabNumber": 1,
-        "title": "24 m2",
-        "text": "Description of apartment [למלא]",
+        "title": "42.76 m2",
+        "text": "",
         "contentList": [
             {
-                "listLeft": "Location",
-                "listRight": "Residence B3"
-            },
-            {
                 "listLeft": "Floor",
-                "listRight": "4"
+                "listRight": "2"
             },
             {
-                "listLeft": "Bed/Bath",
-                "listRight": "1/1"
+                "listLeft": "View",
+                "listRight": "GARDEN+ PORT"
             },
             {
-                "listLeft": "Parking",
-                "listRight": "No"
-            },
-            {
-                "listLeft": "Price",
-                "listRight": "$200,000",
-                "colorClass": "redcolor font-bold"
+                "listLeft": "Room",
+                "listRight": "1+1"
             }
         ],
         "imgSrc": "/images/floor-plan/apartment-2.png",
@@ -61,25 +43,20 @@
     },
     {
         "tabNumber": 2,
-        "title": "36 m2",
-        "text": "Description of apartment [למלא]",
+        "title": "27.52 m2",
+        "text": "",
         "contentList": [
             {
                 "listLeft": "Floor",
-                "listRight": "4"
+                "listRight": "3"
             },
             {
-                "listLeft": "Bed/Bath",
-                "listRight": "1/1"
+                "listLeft": "View",
+                "listRight": "Sea + Port"
             },
             {
-                "listLeft": "Parking",
-                "listRight": "No"
-            },
-            {
-                "listLeft": "Price",
-                "listRight": "$145,000",
-                "colorClass": "redcolor font-bold"
+                "listLeft": "Rooms",
+                "listRight": "Studio"
             }
         ],
         "imgSrc": "/images/floor-plan/apartment-3.png",

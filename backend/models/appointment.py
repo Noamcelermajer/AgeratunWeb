@@ -1,4 +1,5 @@
 from datetime import datetime
+APPOINTMENT_DURATION_MINUTES = 15  # Can be changed easily later
 
 class Appointment:
     def __init__(self, id, title, start_time, end_time, description):
