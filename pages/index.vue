@@ -129,18 +129,7 @@
         <!-- Location State Section End -->
 
         <!-- Home Two Contact Section Start -->
-        <div class="container-fluid"  id="contact-section">
-            <div class="section-padding">
-                <div class="2xl:pb-[85px] xl:pb-[70px] lg:pb-[60px] pb-[30px] text-center">
-                    <span class="text-sm leading-[1.714] block uppercase text-primary">Leave Contact Information</span>
-                    <h2 class="lg:mt-10 md:mt-[30px] mt-5 font-play text-[26px] sm:text-[36px] md:text-[44px] lg:text-[50px] xl:text-[54px] 2xl:text-7xl font-normal uppercase text-black"> <a href='tel:+000000000000'>+000000000000</a> </h2>
-                </div>
-                <HomeTwoContact/>
-                <div class="section-padding pb-0">
-                   
-                </div>
-            </div>
-        </div>
+        <Contact/>
         <!-- Home Two Contact Section End -->
 
         <!-- Footer Section Start -->
@@ -165,7 +154,8 @@ export default {
         LocationStateTwo: () => import('@/components/LocationStateTwo'),
         HomeTwoContact: () => import('@/components/HomeTwoContact'),
         FooterSectionTwo: () => import('@/components/FooterSectionTwo'),
-        LogoDark : () => import('@/components/logo/LogoDark.vue')
+        LogoDark : () => import('@/components/logo/LogoDark.vue'),
+        Contact : () => import ('@/components/Contact.vue')
 
     },
     data () {
