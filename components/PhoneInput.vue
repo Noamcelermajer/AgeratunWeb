@@ -9,6 +9,7 @@
       class="pl-20 text-base w-full h-full text-gray-600 border-0 rounded bg-transparent focus:outline-none focus:border-0 focus:border-black focus:shadow-none"
       placeholder="Phone"
       v-model="phoneNumber"
+      name="phoneNumber"
     />
   </div>
 </template>

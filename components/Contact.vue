@@ -1,27 +1,28 @@
 <template>
   <div class="container-fluid section-padding">
     <div class="2xl:pb-[85px] xl:pb-[70px] lg:pb-[60px] pb-[30px] text-center">
-      <span class="text-sm leading-[1.714] block uppercase text-primary">Leave Contact Information</span>
-      <h2 class="lg:mt-10 md:mt-[30px] mt-5 font-play text-[26px] sm:text-[36px] md:text-[44px] lg:text-[50px] xl:text-[54px] 2xl:text-7xl font-normal uppercase text-black"><a href="tel:+000000000000">+000000000000</a></h2>
+      <h2 class="lg:mt-10 md:mt-[30px] mt-5 font-play text-[26px] sm:text-[36px] md:text-[44px] lg:text-[50px] xl:text-[54px] 2xl:text-7xl font-normal  text-primary">
+        <a >Leave Contact Information</a>
+      </h2>
     </div>
     <div class="w-full sm:w-2/3 mx-auto">
-      <form id="contact-form" @submit.prevent="submitForm" class="grid gap-x-10 grid-cols-2">
+      <form class="grid gap-x-10 grid-cols-2" id="contact-form" action="https://getform.io/f/fa39ccd7-2ac9-490d-910e-4202b2f8e46b" method="POST">
         <div class="single-fild col-span-2 sm:col-span-1 mb-5">
-          <input type="text" placeholder="Full Name" v-model="form.fullName" class="contact-input">
+          <input type="text" placeholder="Full Name" v-model="form.fullName" name="fullName" class="contact-input">
         </div>
         <div class="single-fild col-span-2 sm:col-span-1 mb-5">
-          <input type="email" placeholder="Email" v-model="form.email" class="contact-input">
+          <input type="email" placeholder="Email" v-model="form.email" name="email" class="contact-input">
         </div>
-        <PhoneInput v-model="form.phoneNumber" />
+        <PhoneInput v-model="form.phoneNumber" name="phoneNumber"/>
         <div class="single-fild col-span-2 flex justify-center items-start mt-5 mb-5">
-          <ButtonDefault :btnClass="btnClass" :btnText="btnText" @click="submitForm"></ButtonDefault>
+          <ButtonDefault :btnClass="btnClass" :btnText="btnText" @click="submitForm" :isSubmit=true></ButtonDefault>
           <p class="form-messege"></p>
         </div>
       </form>
     </div>
-    <div class="section-padding pb-0"></div>
   </div>
 </template>
+
 
 <script>
 import PhoneInput from './PhoneInput.vue';
@@ -46,11 +47,30 @@ export default {
   },
   methods: {
     submitForm() {
-      // Submit the form
-      console.log(this.form);
-      // Emit an event to signal the parent component
-      this.$emit('contactFinished');
-    }
+    // Prepare the form data
+    const formData = new FormData();
+    formData.append('fullName', this.form.fullName);
+    formData.append('email', this.form.email);
+    formData.append('phoneNumber', this.form.phoneNumber);
+
+    // Use Fetch API to send the form data
+    fetch('https://getform.io/f/fa39ccd7-2ac9-490d-910e-4202b2f8e46b', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+      window.location.href = "https://getform.io/thank-you"; // Redirect to the thank-you page
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+
+    // Emit an event to signal the parent component
+    this.$emit('contactFinished');
+  }
+
   }
 };
 </script>

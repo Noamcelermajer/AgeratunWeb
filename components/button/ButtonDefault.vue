@@ -3,7 +3,7 @@
         <n-link v-if="btnLink" :to="btnLink" :class="btnClass">
             <i :class="btnIcon"></i> {{btnText}}
         </n-link>
-        <button v-else :class="btnClass" @click="$emit('click', $event)">
+        <button v-else :class="btnClass" @click="$emit('click', $event)" :type="isSubmit ? 'submit' : 'button'">
             <i :class="btnIcon"></i> {{btnText}}
         </button>
     </div>
@@ -16,7 +16,8 @@ export default {
         btnClass: String,
         btnClassParent: String,
         btnText: String,
-        btnIcon: String
+        btnIcon: String,
+        isSubmit: Boolean // Add this prop to differentiate between a submit and a regular button
     }
 }
 </script>
@@ -60,4 +61,5 @@ export default {
     .btn-hover-light {
         @apply hover:border-[#221F1E] text-black before:bg-white;
     }
+    
 </style>
