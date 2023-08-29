@@ -140,7 +140,6 @@
 </template>
 
 <script>
-import smoothScroll from 'vue2-smooth-scroll'
 
 export default {
     components: {

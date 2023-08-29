@@ -17,10 +17,8 @@
   
       <div class="w-full">
         <div class="map-location-layer">
-          <img class="w-full" src="/images/locations/map-2.png" alt="location map">
-          <div v-for="(item, index) in categories" :key="index" :id="'map-location-' + index" class="map-location-item" :style="{ left: item.left, bottom: item.bottom }">
-            <span class="title" v-if="active === index">{{item.title}}</span>
-          </div>
+          <iframe src="https://my.atlist.com/map/43ee7a84-d47e-49d1-af63-055b992d3cd3?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="700px" frameborder="0" scrolling="no" allowfullscreen></iframe>
+          
           <a class="google-map-link" :href="googleMapLink" target="_blank"><i class="fi fi-map-1 mr-2"></i>OPEN GOOGLE MAP</a>
         </div>
       </div>
@@ -54,42 +52,32 @@
       return {
         active: 0,
         categories: [
-  {
-    icon: 'building',
-    title: 'Sky Tower',
-    left: '44%',
-    bottom: '31%',
-    subtitle: 'Sky Tower is the tallest residential building in the city, offering stunning panoramic views.'
-  },
-  {
-    icon: ['fas', 'train-subway'],
-    title: 'Metro (Under Construction)',
-    left: '60%', // Just a placeholder, adjust as needed
-    bottom: '20%', // Just a placeholder, adjust as needed
-    subtitle: 'An ambitious project aimed at reducing traffic congestion, currently under construction.'
-  },
-  {
-    icon: 'landmark',
-    title: 'Jewish Holocaust Museum',
-    left: '25%', // Just a placeholder, adjust as needed
-    bottom: '40%', // Just a placeholder, adjust as needed
-    subtitle: 'A solemn tribute to the lives lost during the Holocaust, this museum educates people on the history and implications.'
-  },
-  {
-    icon: ['fas', 'bag-shopping'],
-    title: 'Thessaloniki Mall',
-    left: '70%', // Just a placeholder, adjust as needed
-    bottom: '60%', // Just a placeholder, adjust as needed
-    subtitle: 'The go-to place for all your shopping needs, offering a wide array of stores and entertainment.'
-  },
-  {
-    icon: 'ship',
-    title: 'Civilian Port Thessaloniki',
-    left: '30%', // Just a placeholder, adjust as needed
-    bottom: '15%', // Just a placeholder, adjust as needed
-    subtitle: 'A bustling port connecting the city to various international destinations, perfect for a short getaway.'
-  }
-],
+      {
+        icon: 'building',
+        title: 'Sky Tower',
+        subtitle: 'Sky Tower is the tallest residential building in the city, offering stunning panoramic views.'
+      },
+      {
+        icon: ['fas', 'train-subway'],
+        title: 'Intercity Bus Station',
+        subtitle: 'An ambitious project aimed at reducing traffic congestion'
+      },
+      {
+        icon: 'landmark',
+        title: 'Jewish Holocaust Museum',
+        subtitle: 'A solemn tribute to the lives lost during the Holocaust, this museum educates people on the history and implications.'
+      },
+      {
+        icon: ['fas', 'bag-shopping'],
+        title: 'Thessaloniki Mall',
+        subtitle: 'The go-to place for all your shopping needs, offering a wide array of stores and entertainment.'
+      },
+      {
+        icon: 'ship',
+        title: 'White tower Thessaloniki',
+        subtitle: 'A bustling port connecting the city to various international destinations, perfect for a short getaway.'
+      }
+    ],
 
         googleMapLink: "https://www.google.com/maps/place/Litous+1,+Thessaloniki+546+27,+Greece/@40.6420884,22.9083298,17z/data=!3m1!4b1!4m6!3m5!1s0x14a83981e46202ff:0xe77a00625f4e6730!8m2!3d40.6420844!4d22.9109047!16s%2Fg%2F11n140rcd1?entry=ttu"
       };
