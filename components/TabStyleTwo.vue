@@ -21,9 +21,9 @@
                                 </ul>
                                 <div class="floor-plan-buttons">
                                     <ButtonDefault 
-                                        :btnLink="'/#contact-section'"
                                         :btnClass="'btn-md min-w-[205px] text-center btn btn-primary btn-hover-dark'"
                                         :btnText="'I am interested'"
+                                        @click="$emit('scroll-to-section')"
                                     />
                                     <ButtonDefault 
                                     :btnClass="'btn-md min-w-[205px] text-center btn btn-primary btn-hover-dark'"

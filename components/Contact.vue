@@ -46,6 +46,7 @@ export default {
     };
   },
   methods: {
+    mounted(){  window.history.replaceState(null, null, ' ');},
     submitForm() {
     // Prepare the form data
     const formData = new FormData();

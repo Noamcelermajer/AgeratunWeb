@@ -10,7 +10,7 @@
             </div>
             <div class="flex items-center">
                 <ButtonDefault 
-                    :btnLink="'#contact-section'"
+                    @click="scrollToSection"
                     :btnClass="'btn-sm btn btn-hover-primary btn-outline-light'"
                     :btnText="'Schedule a visit'"
                     :btnClassParent="'flex'"
@@ -89,7 +89,7 @@
                         titleClass="lg:mt-10 md:mt-[30px] mt-5 font-play text-[26px] sm:text-[36px] md:text-[44px] lg:text-[50px] xl:text-[54px] 2xl:text-7xl font-normal uppercase"
                     />
                     <!-- Section Title End -->
-                    <TabStyleTwo/>
+                    <TabStyleTwo @scroll-to-section="scrollToSection"/>
                 </div>
             </div>
         </div>
@@ -129,7 +129,7 @@
         <!-- Location State Section End -->
 
         <!-- Home Two Contact Section Start -->
-        <Contact/>
+        <Contact ref="contact-section" />
         <!-- Home Two Contact Section End -->
 
         <!-- Footer Section Start -->
@@ -140,6 +140,8 @@
 </template>
 
 <script>
+import smoothScroll from 'vue2-smooth-scroll'
+
 export default {
     components: {
         Logo: () => import('@/components/logo/Logo'),
@@ -165,6 +167,28 @@ export default {
     }
   },
   methods: {
+    scrollToSection() {
+  let element = this.$refs['contact-section'].$el;
+  let elementY = window.scrollY + element.getBoundingClientRect().top;
+  let startingY = window.scrollY;
+  let diff = elementY - startingY;
+  let duration = 300; // Changed to 800ms for a more typical animation speed
+  let start;
+
+  const step = (timestamp) => {
+    if (!start) start = timestamp;
+    let time = timestamp - start;
+    let percent = Math.min(time / duration, 1);
+    
+    window.scrollTo(0, startingY + diff * percent);
+    
+    if (time < duration) {
+      window.requestAnimationFrame(step);
+    }
+  };
+
+  window.requestAnimationFrame(step);
+},
     mounted(){
 
       window.addEventListener('scroll', this.updateStickyState);
@@ -188,6 +212,7 @@ export default {
 
 </script>
 <style lang='scss' scoped>
+
 .is-sticky {
     @apply bg-black transition-all shadow-[2px_4px_8px_rgba(52,58,64,0.15)] fixed z-9999;
 
