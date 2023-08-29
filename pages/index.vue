@@ -22,10 +22,6 @@
             </div>
         </div>
         <!-- Header Section End -->
-        <svg height="210" width="400">
-          <text x="10" y="50" style="font-family: 'Brush Script MT', cursive; font-size: 48px;">SKY</text>
-          <text x="100" y="50" style="font-family: 'Verdana', sans-serif; font-size: 48px;">Tower</text>
-        </svg>
         <!-- Hero Slider Section Start -->
         <div class="relative">
             <HeroTwo />
