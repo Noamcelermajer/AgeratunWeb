@@ -22,7 +22,10 @@
             </div>
         </div>
         <!-- Header Section End -->
-
+        <svg height="210" width="400">
+          <text x="10" y="50" style="font-family: 'Brush Script MT', cursive; font-size: 48px;">SKY</text>
+          <text x="100" y="50" style="font-family: 'Verdana', sans-serif; font-size: 48px;">Tower</text>
+        </svg>
         <!-- Hero Slider Section Start -->
         <div class="relative">
             <HeroTwo />
@@ -39,7 +42,7 @@
       </div>
         <div class="container-fluid">
             <div class="section-padding">
-              <h3 class="font-bold text-2xl mb-4 text-center">Sky Tower Overview</h3>
+              <h3 class="font-bold text-2xl mb-4 text-center">Project Overview</h3>
               <p class="text-lg mb-8">
                 "Sky Tower" is a luxurious real estate project situated along Thessaloniki's picturesque seafront. This exclusive development offers an exceptional vacation experience.
               </p>

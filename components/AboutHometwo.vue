@@ -13,13 +13,13 @@
                         <!-- Section Title Start -->
                         <SectionTitle
                             secTionMargin="2xl:pb-[85px] xl:pb-[70px] lg:pb-[60px] pb-[20px]"
-                            subTitle="Ecopi Garden"
-                            title="The most of luxury &amp; modern bungalow in Orlando"
+                            subTitle="Thessaloniki"
+                            title="Sky Tower Project"
                             titleClass="lg:mt-10 mt-5 font-play text-[26px] sm:text-[36px] md:text-[44px] lg:text-[50px] xl:text-[54px] 2xl:text-7xl font-normal uppercase text-white"
                         />
                         <!-- Section Title End -->
-                        <p class="text-light opacity-[0.75] mb-4">With the philosophy of sustainable development of a prosperous settlement with a romantic breath and beauty in harmony with nature in the style of the Venice city, Italy. Along the Halifax river in Orlando.</p>
-                        <p class="text-light opacity-[0.75]">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English  </p>
+                        <p class="text-light opacity-[0.75] mb-4">The Sky Tower has 8 floors and underground parking. You've got luxury apartments, modern studios, and two-room flats, all fully furnished. Each has a balcony with views of the sea and city.</p>
+                        <p class="text-light opacity-[0.75]">On the eighth floor, there's an infinity pool that overlooks the sea. Right next to it, you'll find a bar and restaurant with indoor and outdoor seating.</p>
                     </div>
                 </div>
             </div>
