@@ -34,11 +34,9 @@
             <FunfactTwo/>
         </div>
         <!-- Funfact Section End -->
-
-        <!-- About Section Start -->
-
-          
-        <!-- About Section End -->
+        <div class="bg-themedark relative before:content-[''] before:absolute before:top-full before:left-0 before:w-full before:h-[50px] md:before:h-[70px] lg:before:h-[133px] mb-[50px] md:mb-[70px] lg:mb-[133px] before:bg-no-repeat before:bg-center before:bg-cover before:bg-[url('/images/shapes/about.png')]">
+          <AboutHometwo />
+      </div>
         <div class="container-fluid">
             <div class="section-padding">
               <h3 class="font-bold text-2xl mb-4 text-center">Sky Tower Overview</h3>

@@ -24,31 +24,7 @@
             return {
                 commentsVisible: false,
                 counter: [
-                    {
-                        startVal: 0,
-                        endVal: 8,
-                        text: "Floors"
-                    },
-                    {
-                        startVal: 0,
-                        endVal: 3,
-                        text: "Pool"
-                    },
-                    {
-                        startVal: 0,
-                        endVal: 1,
-                        text: "Rooftop Bar"
-                    },
-                    {
-                        startVal: 0,
-                        endVal: 1,
-                        text: "Car Parking"
-                    },
-                    {
-                        startVal: 0,
-                        endVal: 1,
-                        text: "Gym & Spa"
-                    }
+
                 ]
             }
         },
