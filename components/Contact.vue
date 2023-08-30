@@ -1,7 +1,8 @@
 <template>
   <div class="container-fluid section-padding">
     <div class="2xl:pb-[85px] xl:pb-[70px] lg:pb-[60px] pb-[30px] text-center">
-      <h2 class="lg:mt-10 md:mt-[30px] mt-5 font-play text-[26px] sm:text-[36px] md:text-[44px] lg:text-[50px] xl:text-[54px] 2xl:text-7xl font-normal  text-primary">
+      <h2
+        class="lg:mt-10 md:mt-[30px] mt-5 font-play text-[26px] sm:text-[36px] md:text-[44px] lg:text-[50px] xl:text-[54px] 2xl:text-7xl font-normal  text-primary">
         <a>Leave Contact Information</a>
       </h2>
     </div>
@@ -9,29 +10,38 @@
       <form id="contact-form" class="space-y-5" @submit.prevent="submitForm">
         <!-- First and Last Name Fields -->
         <div class="flex space-x-2 mb-5">
-          <input type="text" :title="errors.firstName" placeholder="First Name" v-model="form.firstName" name="firstName"
-            class="text-base flex-1 text-gray-600 border-b border-gray-300 focus:border-black rounded bg-transparent focus:outline-none" />
-          <input type="text" :title="errors.lastName" placeholder="Last Name" v-model="form.lastName" name="lastName"
-            class="text-base flex-1 text-gray-600 border-b border-gray-300 focus:border-black rounded bg-transparent focus:outline-none" />
+          <input type="text" required pattern="[a-zA-Z\s]+" title="Only letters allowed" placeholder="First Name" v-model="form.firstName" name="firstName" class="text-base flex-1 text-gray-600 border-b border-gray-300 focus:border-black rounded bg-transparent focus:outline-none" />
+          <input type="text" required pattern="[a-zA-Z\s]+" title="Only letters allowed" placeholder="Last Name" v-model="form.lastName" name="lastName" class="text-base flex-1 text-gray-600 border-b border-gray-300 focus:border-black rounded bg-transparent focus:outline-none" />
         </div>
-        <!-- Phone Input Field -->
-        <div class="flex space-x-2 mb-5">
-          <input @input="autocomplete" type="text" 
-            class="text-base flex-1 text-gray-600 contact-input rounded bg-transparent focus:outline-none"
-            placeholder="Country Code" v-model="inputValue" name="countryCode" />
-          <input @input="validateNumber" type="text"
-            class="text-base flex-1 text-gray-600 contact-input rounded bg-transparent focus:outline-none"
-            placeholder="Phone" v-model="phoneNumber" name="phoneNumber" />
+
+
+        <div class="relative flex space-x-2 mb-5">
+          <client-only>
+
+            <vue-country-code v-model="inputValue" name="countryCode" placeholder="+" class="narrow-width text-base flex-1 text-gray-600 border-b border-transparent focus:border-black rounded bg-transparent focus:outline-none"></vue-country-code>
+          </client-only>
+            <input type="text" 
+                   @input="validateNumber" 
+                   v-model="phoneNumber" 
+                   name="phoneNumber" 
+                   class="contact-input" 
+                   placeholder="Phone number"
+                   required 
+                   pattern="[0-9]{10,}" 
+                   title="Phone number should be 10 or more digits"/>
+            
+          
+          <div v-if="showPopup" class="absolute top-0 right-0 bg-red-500 text-white p-2 rounded">
+            Number should be 10 digits!
+          </div>
         </div>
         <!-- Email Field -->
         <div class="mb-5">
-          <input type="email" :title="errors.email" placeholder="Email" v-model="form.email" name="email"
-            class="contact-input w-full">
+          <input type="email" required title="Valid Email is required" placeholder="Email" v-model="form.email" name="email" class="contact-input w-full" />
         </div>
         <!-- Submit Button -->
         <div class="flex justify-center mt-5 mb-5">
-          <ButtonDefault :btnClass="btnClass" :btnText="btnText" @click="submitForm" :isSubmit=true :disabled="!isValid">
-          </ButtonDefault>
+          <ButtonDefault :btnClass="btnClass" :btnText="btnText" @click="submitForm" :isSubmit=true :disabled="!isValid"></ButtonDefault>
         </div>
       </form>
     </div>
@@ -43,10 +53,11 @@
 <script>
 import ButtonDefault from '@/components/button/ButtonDefault.vue'; // Correct path to the button component
 import codes from '@/data/codes.json'; // Assuming you have this file
-
+import VueCountryCode from "vue-country-code";
 export default {
   components: {
-    ButtonDefault
+    ButtonDefault,
+    VueCountryCode  
   },
   data() {
     return {
@@ -70,6 +81,7 @@ export default {
       filteredCodes: [],
       showSuggestions: false,
       phoneNumber: '',
+      apiBaseUrl: "https://countryflags.io/",
     };
   },
   methods: {
@@ -79,18 +91,29 @@ export default {
     },
     validateNumber() {
     this.phoneNumber = this.phoneNumber.replace(/[^0-9]/g, '');
-    if (!this.phoneNumber || this.phoneNumber.length < 10) {
+    if (this.phoneNumber.length !== 10) {
       this.showPopup = true;
     } else {
       this.showPopup = false;
     }
   },
-    autocomplete() {
-      this.filteredCodes = this.countryCodes.filter(code =>
-        code.includes(this.inputValue)
-      );
+  autocomplete() {
+    if (this.inputValue.length > 3) {
+      this.inputValue = this.inputValue.slice(0, 3);
+    }
+    this.filteredCodes = this.countryCodes.filter(code => code.startsWith(this.inputValue));
+    if (this.filteredCodes.length === 1) {
+      this.inputValue = this.filteredCodes[0]; // Auto-complete
+    }
+    if (this.filteredCodes.length) {
       this.showSuggestions = true;
-    },
+    } else {
+      this.showSuggestions = false;
+    }
+  },
+  getFlagUrl(countryCode) {
+    return `${this.apiBaseUrl}${countryCode.slice(1)}/flat/64.png`;
+  },
     handlePhoneData() {
       this.form.countryCode = this.inputValue;
       this.form.phoneNumber = this.phoneNumber;
@@ -187,4 +210,5 @@ export default {
   border-color: black;
   box-shadow: none;
 }
+
 </style>
