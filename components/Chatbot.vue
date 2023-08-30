@@ -32,7 +32,6 @@
   </div>
 </template>
 <script>
-import countryCodes from '@/data/countrycode.json';
 import axios from 'axios';
 export default {
   data() {
